@@ -1,12 +1,6 @@
+import { useState } from 'react';
 import { ArrowRight, Calendar, Clock, Mail, Phone, User, Users } from 'lucide-react';
 
-/**
- * Reservation form wired for Netlify Forms.
- *
- * Native HTML submission — no JS fetch. Netlify intercepts the POST at
- * deploy time and stores the submission. The `action` attribute sends the
- * guest to a thank-you anchor after success.
- */
 interface ReservationFormProps {
   className?: string;
 }
@@ -18,13 +12,42 @@ const labelBase =
   'block text-xs uppercase tracking-[0.2em] text-cream/50 mb-2';
 
 export function ReservationForm({ className = '' }: ReservationFormProps) {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData as any).toString(),
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => alert(error));
+  };
+
+  if (submitted) {
+    return (
+      <div className="border border-amber-gold/30 bg-charcoal-dark p-10 md:p-14">
+        <p className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-4">
+          Richiesta ricevuta
+        </p>
+        <p className="font-serif text-2xl md:text-3xl text-cream italic leading-[1.3]">
+          «Grazie. Ti contatteremo presto per confermare la tua prenotazione.»
+        </p>
+      </div>
+    );
+  }
+
   return (
     <form
       name="prenotazione"
       method="POST"
-      action="/reservations?grazie=1"
       data-netlify="true"
       netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
       className={`space-y-8 ${className}`}
     >
       {/* Netlify hidden fields */}
