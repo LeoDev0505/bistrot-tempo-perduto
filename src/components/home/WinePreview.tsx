@@ -27,7 +27,7 @@ export function WinePreview() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="hidden md:block absolute -bottom-10 -right-10 w-52 h-72 overflow-hidden border-8 border-espresso-950 shadow-2xl"
+                className="block absolute -bottom-4 -right-4 w-32 h-44 md:-bottom-10 md:-right-10 md:w-52 md:h-72 overflow-hidden border-4 md:border-8 border-espresso-950 shadow-2xl z-10"
               >
                 <SmartImage
                   src="images/redwine.jpg"

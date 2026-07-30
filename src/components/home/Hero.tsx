@@ -22,14 +22,14 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-espresso-950 via-transparent to-espresso-950/60" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-20">
         
-        {/* Usiamo inline-block con un margine sinistro esplicito per spostarla quanto serve */}
+        {/* Rimosso il margine sinistro su mobile per centrarlo, mantenuto su desktop (md:ml-20) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-6 ml-12 md:ml-20"
+          className="mb-4 md:mb-6 md:ml-20"
         >
           <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-amber-gold/90">
             Imperia · Liguria · Dal 2003
