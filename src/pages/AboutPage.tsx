@@ -285,7 +285,9 @@ export default function AboutPage() {
               <Reveal key={src} delay={i * 0.1} y={30}>
                 <div
                   className={`relative overflow-hidden aspect-square transition-all ${
-                    i === 2 ? 'col-span-2 md:col-span-1 justify-self-center md:justify-self-auto' : ''
+                    i === 2
+                      ? 'col-span-2 md:col-span-1 w-[calc(50%-0.5rem)] md:w-full justify-self-center md:justify-self-stretch'
+                      : ''
                   }`}
                 >
                   <SmartImage
