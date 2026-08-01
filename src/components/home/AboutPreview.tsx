@@ -47,7 +47,7 @@ export function AboutPreview() {
             <Reveal delay={0.3}>
               <div className="mt-10">
                 <ButtonLink to="/about" variant="ghost" withArrow className="text-amber-gold">
-                  Discover Our Story
+                  Scopri la nostra storia
                 </ButtonLink>
               </div>
             </Reveal>

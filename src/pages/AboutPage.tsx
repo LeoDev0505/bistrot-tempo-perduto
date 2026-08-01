@@ -284,8 +284,8 @@ export default function AboutPage() {
             {STRIP_IMAGES.map((src, i) => (
               <Reveal key={src} delay={i * 0.1} y={30}>
                 <div
-                  className={`relative overflow-hidden ${
-                    i === 0 ? 'col-span-2 md:col-span-1 aspect-square' : 'aspect-square'
+                  className={`relative overflow-hidden aspect-square transition-all ${
+                    i === 2 ? 'col-span-2 md:col-span-1 w-1/2 mx-auto md:w-full' : ''
                   }`}
                 >
                   <SmartImage
