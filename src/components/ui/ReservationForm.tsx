@@ -54,10 +54,10 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
         </div>
 
         <div>
-          <label htmlFor="party_size" className={labelBase}>Numero di Ospiti</label>
+          <label htmlFor="guests" className={labelBase}>Numero di Ospiti</label>
           <div className="relative">
             <Users className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <select id="party_size" name="party_size" required defaultValue="2" className={`${inputBase} appearance-none cursor-pointer`}>
+            <select id="guests" name="guests" required defaultValue="2" className={`${inputBase} appearance-none cursor-pointer`}>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
                 <option key={n} value={n} className="bg-espresso-900 text-cream">
                   {n} {n === 1 ? 'ospite' : 'ospiti'}
@@ -102,8 +102,8 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
       </div>
 
       <div>
-        <label htmlFor="notes" className={labelBase}>Richieste Speciali <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
-        <textarea id="notes" name="notes" rows={3} className="w-full bg-transparent border-b border-cream/20 focus:border-amber-gold py-3 text-cream placeholder-cream/30 transition-colors duration-500 outline-none font-sans text-sm resize-none" placeholder="Allergie, intolleranze, richieste particolari..." />
+        <label htmlFor="message" className={labelBase}>Richieste Speciali <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
+        <textarea id="message" name="message" rows={3} className="w-full bg-transparent border-b border-cream/20 focus:border-amber-gold py-3 text-cream placeholder-cream/30 transition-colors duration-500 outline-none font-sans text-sm resize-none" placeholder="Allergie, intolleranze, richieste particolari..." />
       </div>
 
       <div className="pt-4">
