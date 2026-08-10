@@ -16,11 +16,10 @@ export default function ReservationsPage() {
       <PageHero
         eyebrow="Prenotazioni"
         title="Riserva il tuo tavolo"
-        image={IMAGE.reservationHero}
+        image="/images/tavolo.jpg"
       >
         <p className="mt-6 max-w-xl text-cream/60 leading-relaxed">
-          Compila la richiesta qui sotto. Ti contatteremo per confermare la
-          disponibilità. Per gruppi oltre gli 8 ospiti o eventi privati,
+          Compila la richiesta qui sotto. Per gruppi oltre gli 8 ospiti o eventi privati,
           chiamaci direttamente.
         </p>
       </PageHero>

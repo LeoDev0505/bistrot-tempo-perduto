@@ -13,7 +13,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contatti"
         title="Vieni a trovarci"
-        image={IMAGE.contactHero}
+        image="/images/trovaci.jpg"
       >
         <p className="mt-6 max-w-xl text-cream/60 leading-relaxed">
           Siamo nel cuore di Imperia, a pochi passi dal porto. Per qualsiasi

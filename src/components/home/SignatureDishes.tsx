@@ -7,31 +7,30 @@ import { IMAGE } from '@/lib/constants';
 
 const DISHES = [
   {
-    name: 'Crudo di Ricciola',
+    name: 'Escargots de Bourgogne',
     description:
-      'Il respiro del Mar Ligure. Pescato localmente e lavorato con rispetto, servito puro ed essenziale con olio extravergine di Taggia.',
-    image: '/images/crudo.jpg',
+      'Lumache alla borgognona gratinate nel guscio con burro, aglio e prezzemolo.',
+    image: '/images/lumache.jpg',
     tag: 'Dal Mare',
   },
   {
-    name: 'Pansoti con Salsa di Noci',
+    name: 'Baccalà mantecato',
     description:
-      "L'anima dell'entroterra. Pasta fresca tirata a mano ogni mattina, con il classico ripieno di erbette e una crema di noci avvolgente.",
-    image: '/images/pansotti.jpg',
+      "Baccalà lavorato ad arte con un filo d'olio extravergine, servito con un crostino croccante e una delicata foglia di basilico fresco.",
+    image: '/images/baccala.jpg',
     tag: 'Pasta Fresca',
   },
+{
+  name: 'Crudo di Gamberi Rossi',
+  description: 'Freschissimi gamberi rossi serviti al naturale su un letto di ghiaccio tritato, per esaltarne la purezza e la naturale dolcezza.',
+  image: '/images/gamberi.jpg',
+  tag: 'Dal Mare',
+},
   {
-    name: 'Entrecôte au Poivre',
+    name: 'Cozze alla marinara',
     description:
-      "La grande tradizione d'oltralpe. Taglio pregiato di manzo maremmano, salsa al pepe verde e il calore di una lenta rosolatura.",
-    image: '/images/entrecote.jpg',
-    tag: 'Dalla Terra',
-  },
-  {
-    name: 'Crème Brûlée alla Lavanda',
-    description:
-      'Il dolce ricordo a fine servizio. La classica crema francese profumata alla lavanda di Provenza, caramellata a fiamma viva.',
-    image: '/images/brulee.jpg',
+      'Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodorini, servite con crostino dorato e limone.',
+    image: '/images/cozze.png',
     tag: 'Dolce',
   },
 ];

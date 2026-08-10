@@ -21,7 +21,7 @@ export default function MenuPage() {
         eyebrow="Il Menù"
         title="Il menù cambia con le stagioni"
         image={IMAGE.dishSeafood}
-        isCompact={true} // <--- AGGIUNTA QUI!
+        isCompact={true}
       >
         <p className="mt-6 max-w-xl text-cream/60 leading-relaxed">
           Una cucina che segue il mercato, il mare e l’orto. Questi sono i
@@ -35,7 +35,6 @@ export default function MenuPage() {
         onChange={setActive}
       />
 
-      {/* Rimosso grain-overlay per eliminare il lag grafico */}
       <section className="relative py-20 md:py-32 bg-espresso-950 min-h-[60vh]">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16">
           <AnimatePresence mode="wait">
@@ -45,7 +44,7 @@ export default function MenuPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              style={{ willChange: 'auto' }} // Aggiunto per alleggerire il browser
+              style={{ willChange: 'auto' }}
             >
               <div className="mb-16 md:mb-24 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
                 <div className="md:col-span-5">
@@ -96,9 +95,10 @@ export default function MenuPage() {
             <p className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-6">
               Nota
             </p>
+            {/* HO AGGIUNTO QUI LA NOTA SUL PRODOTTO GELO */}
             <p className="font-serif text-2xl md:text-3xl text-cream italic leading-[1.3] text-balance">
               «Il menù può variare secondo la disponibilità del mercato e
-              della stagione. Per allergie e intolleranze, parla con il nostro staff.»
+              della stagione. In mancanza di prodotto fresco, si potrebbe utilizzare prodotto gelo. Per allergie e intolleranze, parla con il nostro staff.»
             </p>
           </Reveal>
           <Reveal delay={0.2}>
@@ -114,17 +114,29 @@ export default function MenuPage() {
   );
 }
 
-/** MenuRow semplificato per non affaticare lo scorrimento */
+/** MenuRow con l'aggiunta del prezzo allineato a destra */
 function MenuRow({ item }: { item: MenuItem }) {
   return (
     <article className="group py-8 md:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
       <div className="md:col-span-9">
-        <h3 className="font-serif text-2xl md:text-3xl text-cream group-hover:text-amber-gold transition-colors duration-500">
-          {item.name}
-        </h3>
+        
+        {/* QUI HO INSERITO IL FLEXBOX PER AFFIANCARE NOME E PREZZO */}
+        <div className="flex justify-between items-baseline gap-4">
+          <h3 className="font-serif text-2xl md:text-3xl text-cream group-hover:text-amber-gold transition-colors duration-500">
+            {item.name}
+          </h3>
+          {/* Rendering del prezzo con font-serif e colore oro */}
+          {item.price && (
+            <span className="font-serif text-xl md:text-2xl text-amber-gold shrink-0">
+              {item.price}
+            </span>
+          )}
+        </div>
+
         <p className="mt-3 text-cream/55 leading-relaxed max-w-2xl">
           {item.description}
         </p>
+        
         {item.tags && item.tags.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
             {item.tags.map((tag) => (

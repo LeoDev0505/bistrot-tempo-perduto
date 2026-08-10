@@ -14,7 +14,7 @@ export function AboutPreview() {
             <Reveal y={40}>
               <div className="relative aspect-[4/5] overflow-hidden">
                 <SmartImage
-                  src="/images/candele.jpg"
+                  src="/images/sala.jpg"
                   alt="L'interno del bistrot illuminato da candele"
                   className="h-full w-full object-cover transition-transform duration-[1.5s] ease-out hover:scale-105"
                 />

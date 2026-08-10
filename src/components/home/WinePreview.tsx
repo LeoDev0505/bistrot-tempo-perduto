@@ -58,7 +58,7 @@ export function WinePreview() {
             </Reveal>
             <Reveal delay={0.3}>
               <p className="mt-6 text-cream/50 leading-relaxed">
-                Il nostro sommelier è a disposizione per guidarti in un percorso
+                Il nostro personale è a disposizione per guidarti in un percorso
                 di degustazione, dalla bollicina d’apertura al dolce finale.
               </p>
             </Reveal>

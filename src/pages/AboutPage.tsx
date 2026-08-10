@@ -7,9 +7,9 @@ import { IMAGE, RESTAURANT } from '@/lib/constants';
 
 // Inline image URLs for the atmosphere strip (gallery page removed).
 const STRIP_IMAGES = [
-  '/images/sociality.jpeg',
-  '/images/musicista.jpeg',
+  '/images/sociality.jpg',
   '/images/immagini.jpeg',
+  '/images/musicista.jpeg',
 ];
 
 export default function AboutPage() {
@@ -29,7 +29,7 @@ export default function AboutPage() {
               <Reveal>
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <SmartImage
-                    src={IMAGE.aboutChef}
+                    src="images/vanessa.jpg"
                     alt="Lo chef al lavoro"
                     className="h-full w-full object-cover"
                   />
@@ -48,19 +48,70 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.2}>
                 <p className="mt-8 text-cream/60 leading-relaxed text-lg max-w-2xl">
-                  Tutto è iniziato con un piccolo locale nel centro storico di
-                  Imperia, quando due amici — uno chef ligure e un sommelier
-                  reduce da anni in Provenza — decisero di aprire un posto dove
-                  il tempo non avesse fretta.
+                  C'era una volta{' '}
+                  <span className="text-amber-light/90">
+                    "Il Bistrot del Tempo Perduto"
+                  </span>
+                  , un delizioso angolo di paradiso fatto di candele, luci
+                  soffuse, profumi e oggetti che respirano l'aria di un'epoca
+                  passata.{' '}
+                  <span className="text-amber-light/90">
+                    Oggi è il momento di cambiare
+                  </span>
+                  , non nella sostanza, ma nei luoghi. Dopo un percorso sfidante
+                  e faticoso, siamo finalmente arrivati al traguardo: vi
+                  accogliamo in un{' '}
+                  <span className="text-amber-light/90">
+                    nuovo spazio dove arredi e colori emanano bellezza
+                  </span>{' '}
+                  e ricercatezza nei dettagli, senza mai lasciare indietro i nostri
+                  sapori.
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-2xl">
-                  Il nome «Tempo Perduto» è un omaggio alle sere che sembrano
-                  non finire mai, alle conversazioni che si allungano, ai vini
-                  che si fanno aspettare. In vent’anni la casa è cresciuta, ma
-                  lo spirito è rimasto lo stesso: pochi coperti, grande cura,
-                  nessuna fretta.
+                  La nostra cucina si rifà ai{' '}
+                  <span className="text-amber-light/90">
+                    ricettari della nonna
+                  </span>
+                  . I nostri piatti sono fatti di{' '}
+                  <span className="text-amber-light/90">
+                    ricordi e tradizioni
+                  </span>
+                  , come la pasta fresca e lo stoccafisso alla ligure. Da noi puoi
+                  ritrovare l'autentico{' '}
+                  <span className="text-amber-light/90">
+                    "piatto della domenica"
+                  </span>
+                  , quello che riporta alla mente i caldi pranzi in famiglia, per
+                  poi chiudere in dolcezza con i{' '}
+                  <span className="text-amber-light/90">
+                    dessert più classici
+                  </span>
+                  , semplicemente quelli della mamma.
+                </p>
+              </Reveal>
+              <Reveal delay={0.4}>
+                <p className="mt-6 text-cream/50 leading-relaxed max-w-2xl">
+                  Fuori tutto è{' '}
+                  <span className="text-amber-light/90">
+                    corsa e frenesia
+                  </span>
+                  , ma nel Bistrot no. Il nome "Tempo Perduto" continua a essere
+                  un{' '}
+                  <span className="text-amber-light/90">
+                    omaggio alle sere che sembrano non finire mai
+                  </span>{' '}
+                  e ai vini che si fanno aspettare. Qui è come se il{' '}
+                  <span className="text-amber-light/90">
+                    tempo si fermasse
+                  </span>
+                  , trasformando l'attesa in meraviglia. Lo spirito è lo stesso di
+                  sempre: grande cura per i dettagli, il sapore dei ricordi e{' '}
+                  <span className="text-amber-light/90">
+                    nessuna fretta
+                  </span>
+                  . E il nostro racconto continua con grandi novità... a presto.
                 </p>
               </Reveal>
             </div>
@@ -127,10 +178,9 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-xl">
-                  Anni passati in Provenza hanno insegnato al nostro chef il
+                  Anni passati in Provenza ci hanno insegnato il
                   rispetto per il tempo: il tempo di un fondo che riduce, di un
-                  brasato che cuoce sei ore, di una pasta che riposa. Tornato a
-                  Imperia, ha portato con sé quella pazienza.
+                  brasato che cuoce sei ore, di una pasta che riposa. 
                 </p>
               </Reveal>
             </div>
@@ -253,7 +303,7 @@ export default function AboutPage() {
               {
                 num: '02',
                 title: 'Cantina',
-                text: 'Mille etichette scelte una a una. Il sommelier costruisce percorsi su misura per ogni ospite.',
+                text: "Una selezione curata di vini. Il nostro staff ti consiglierà l'abbinamento perfetto per i tuoi piatti.",
               },
               {
                 num: '03',
