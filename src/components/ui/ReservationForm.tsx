@@ -112,10 +112,6 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
           <ArrowRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" />
         </button>
       </div>
-
-      <p className="text-xs text-cream/40 leading-relaxed">
-        La prenotazione non è confermata fino a quando non riceverai una comunicazione dal nostro staff.
-      </p>
     </form>
   );
 }
