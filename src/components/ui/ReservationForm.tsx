@@ -30,10 +30,10 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <label htmlFor="name" className={labelBase}>Nome e Cognome</label>
+          <label htmlFor="nome" className={labelBase}>Nome e Cognome</label>
           <div className="relative">
             <User className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <input id="name" name="name" type="text" required className={inputBase} placeholder="Mario Rossi" />
+            <input id="nome" name="nome" type="text" required className={inputBase} placeholder="Mario Rossi" />
           </div>
         </div>
 
@@ -46,41 +46,41 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
         </div>
 
         <div>
-          <label htmlFor="phone" className={labelBase}>Telefono</label>
+          <label htmlFor="telefono" className={labelBase}>Telefono</label>
           <div className="relative">
             <Phone className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <input id="phone" name="phone" type="tel" required className={inputBase} placeholder="+39 333 1234567" />
+            <input id="telefono" name="telefono" type="tel" required className={inputBase} placeholder="+39 333 1234567" />
           </div>
         </div>
 
         <div>
-          <label htmlFor="guests" className={labelBase}>Numero di Ospiti</label>
+          <label htmlFor="ospiti" className={labelBase}>Numero di Ospiti</label>
           <div className="relative">
             <Users className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <select id="guests" name="guests" required defaultValue="2" className={`${inputBase} appearance-none cursor-pointer`}>
+            <select id="ospiti" name="ospiti" required defaultValue="2" className={`${inputBase} appearance-none cursor-pointer`}>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
                 <option key={n} value={n} className="bg-espresso-900 text-cream">
                   {n} {n === 1 ? 'ospite' : 'ospiti'}
                 </option>
               ))}
-              <option value={9} className="bg-espresso-900 text-cream">9+ (gruppi)</option>
+              <option value="9+" className="bg-espresso-900 text-cream">9+ (gruppi)</option>
             </select>
           </div>
         </div>
 
         <div>
-          <label htmlFor="date" className={labelBase}>Data</label>
+          <label htmlFor="data" className={labelBase}>Data</label>
           <div className="relative">
             <Calendar className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <input id="date" name="date" type="date" required min={new Date().toISOString().split('T')[0]} className={`${inputBase} [color-scheme:dark]`} />
+            <input id="data" name="data" type="date" required min={new Date().toISOString().split('T')[0]} className={`${inputBase} [color-scheme:dark]`} />
           </div>
         </div>
 
         <div>
-          <label htmlFor="time" className={labelBase}>Ora</label>
+          <label htmlFor="ora" className={labelBase}>Ora</label>
           <div className="relative">
             <Clock className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 text-cream/40" />
-            <select id="time" name="time" required defaultValue="20:00" className={`${inputBase} appearance-none cursor-pointer`}>
+            <select id="ora" name="ora" required defaultValue="20:00" className={`${inputBase} appearance-none cursor-pointer`}>
               {['12:30', '13:00', '13:30', '14:00', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30'].map((t) => (
                 <option key={t} value={t} className="bg-espresso-900 text-cream">{t}</option>
               ))}
@@ -90,20 +90,20 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
       </div>
 
       <div>
-        <label htmlFor="occasion" className={labelBase}>Occasione <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
-        <select id="occasion" name="occasion" defaultValue="" className={`${inputBase} pl-0 appearance-none cursor-pointer`}>
-          <option value="" className="bg-espresso-900 text-cream">Nessuna</option>
-          <option value="anniversary" className="bg-espresso-900 text-cream">Anniversario</option>
-          <option value="birthday" className="bg-espresso-900 text-cream">Compleanno</option>
-          <option value="business" className="bg-espresso-900 text-cream">Cena di lavoro</option>
-          <option value="celebration" className="bg-espresso-900 text-cream">Celebrazione</option>
-          <option value="first-date" className="bg-espresso-900 text-cream">Primo appuntamento</option>
+        <label htmlFor="occasione" className={labelBase}>Occasione <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
+        <select id="occasione" name="occasione" defaultValue="" className={`${inputBase} pl-0 appearance-none cursor-pointer`}>
+          <option value="Nessuna" className="bg-espresso-900 text-cream">Nessuna</option>
+          <option value="Anniversario" className="bg-espresso-900 text-cream">Anniversario</option>
+          <option value="Compleanno" className="bg-espresso-900 text-cream">Compleanno</option>
+          <option value="Cena di lavoro" className="bg-espresso-900 text-cream">Cena di lavoro</option>
+          <option value="Celebrazione" className="bg-espresso-900 text-cream">Celebrazione</option>
+          <option value="Primo appuntamento" className="bg-espresso-900 text-cream">Primo appuntamento</option>
         </select>
       </div>
 
       <div>
-        <label htmlFor="message" className={labelBase}>Richieste Speciali <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
-        <textarea id="message" name="message" rows={3} className="w-full bg-transparent border-b border-cream/20 focus:border-amber-gold py-3 text-cream placeholder-cream/30 transition-colors duration-500 outline-none font-sans text-sm resize-none" placeholder="Allergie, intolleranze, richieste particolari..." />
+        <label htmlFor="messaggio" className={labelBase}>Richieste Speciali <span className="text-cream/30 normal-case tracking-normal">(opzionale)</span></label>
+        <textarea id="messaggio" name="messaggio" rows={3} className="w-full bg-transparent border-b border-cream/20 focus:border-amber-gold py-3 text-cream placeholder-cream/30 transition-colors duration-500 outline-none font-sans text-sm resize-none" placeholder="Allergie, intolleranze, richieste particolari..." />
       </div>
 
       <div className="pt-4">
