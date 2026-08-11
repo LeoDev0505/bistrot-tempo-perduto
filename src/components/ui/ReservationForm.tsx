@@ -13,7 +13,7 @@ const labelBase =
 export function ReservationForm({ className = '' }: ReservationFormProps) {
   return (
     <form
-      name="prenotazione"
+      name="prenotazione_it" // <--- CAMBIATO QUI
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
@@ -21,7 +21,7 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
       className={`space-y-8 ${className}`}
     >
       {/* Netlify hidden fields */}
-      <input type="hidden" name="form-name" value="prenotazione" />
+      <input type="hidden" name="form-name" value="prenotazione_it" /> {/* <--- CAMBIATO ANCHE QUI */}
       <p className="hidden">
         <label>
           Non compilare questo campo: <input name="bot-field" />
@@ -112,6 +112,10 @@ export function ReservationForm({ className = '' }: ReservationFormProps) {
           <ArrowRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" />
         </button>
       </div>
+
+      <p className="text-xs text-cream/40 leading-relaxed">
+        La prenotazione non è confermata fino a quando non riceverai una comunicazione dal nostro staff.
+      </p>
     </form>
   );
 }
