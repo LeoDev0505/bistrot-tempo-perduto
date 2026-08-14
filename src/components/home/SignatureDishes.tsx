@@ -16,18 +16,18 @@ const DISHES = [
   {
     name: 'Baccalà mantecato',
     description:
-      "Baccalà lavorato ad arte con un filo d'olio extravergine, servito con un crostino croccante e una delicata foglia di basilico fresco.",
+      "Baccalà lavorato ad arte con un filo d'olio d'oliva, servito con un crostino croccante.",
     image: '/images/baccala.jpg',
     tag: 'Pasta Fresca',
   },
 {
-  name: 'Crudo di Gamberi Rossi',
-  description: 'Freschissimi gamberi rossi serviti al naturale su un letto di ghiaccio tritato, per esaltarne la purezza e la naturale dolcezza.',
+  name: 'Crudo di Gamberi Freschi',
+  description: 'Freschissimi gamberi serviti al naturale su un letto di ghiaccio tritato, per esaltarne la purezza e la naturale dolcezza.',
   image: '/images/gamberi.jpg',
   tag: 'Dal Mare',
 },
   {
-    name: 'Cozze alla marinara',
+    name: 'Sautè di Cozze',
     description:
       'Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodorini, servite con crostino dorato e limone.',
     image: '/images/cozze.png',

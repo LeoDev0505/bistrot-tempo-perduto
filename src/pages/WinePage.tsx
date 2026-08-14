@@ -19,12 +19,13 @@ export default function WinePage() {
     <>
       <PageHero
         eyebrow="La Cantina"
-        title="Mille etichette, una storia"
+        title="Una storia di oltre 50 etichette"
         image={IMAGE.wineCellar}
       >
         <p className="mt-6 max-w-xl text-cream/60 leading-relaxed">
-          Una cantina costruita in vent’anni di ricerca. Vitigni liguri,
+          Una cantina costruita in nove anni di ricerca. Vitigni liguri,
           grandi italiani, classici francesi e bollicine per ogni occasione.
+          Qui sotto proponiamo qualche esempio della nostra cantina
         </p>
       </PageHero>
 

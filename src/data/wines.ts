@@ -13,7 +13,7 @@ export interface Wine {
   image: string;
 }
 
-export type WineType = 'Rosso' | 'Bianco' | 'Bollicine' | 'Dolce';
+export type WineType = 'Rosso' | 'Bianco' | 'Bollicine' | 'Dolce' | 'Rosato';
 export type WineCategory = 'liguria' | 'italia' | 'francia' | 'bollicine';
 
 export interface WineRegion {
@@ -55,192 +55,197 @@ export const WINE_REGIONS: WineRegion[] = [
 ];
 
 export const WINES: Wine[] = [
-  // Liguria
+  // LIGURIA
   {
     id: 'w-lig-1',
-    name: 'Rossese di Dolceacqua',
-    producer: 'Lupi',
-    region: 'Dolceacqua, Liguria',
-    year: '2019',
-    type: 'Rosso',
-    category: 'liguria',
-    description:
-      'Il rosso storico della Liguria, elegante e profumato, coltivato sulle terrazze dell’entroterra di Ventimiglia.',
-    tastingNotes: ['Frutti rossi', 'Pepe bianco', 'Liquirizia'],
-    pairing: 'Cacciagione, formaggi stagionati',
-    featured: true,
-    image:
-      '/images/rossese.jpeg',
-  },
-  {
-    id: 'w-lig-2',
     name: 'Vermentino',
-    producer: 'Tenuta Selvamatica',
-    region: 'Liguria di Levante',
-    year: '2022',
+    producer: 'Maixei',
+    region: 'Riviera Ligure di Ponente',
+    year: '2025',
     type: 'Bianco',
     category: 'liguria',
     description:
-      'Vermentino ligure fresco e sapido, profumo di fiori di ginepro e macchia mediterranea.',
-    tastingNotes: ['Fiori bianchi', 'Mandarino', 'Mineralità'],
-    pairing: 'Pesce crudo, antipasti di mare',
+      'Vermentino fresco e vivace del Ponente ligure. Delicati profumi floreali e nota sapida che richiama il mare.',
+    tastingNotes: ['Fiori bianchi', 'Agrumi', 'Erbe aromatiche'],
+    pairing: 'Antipasti di mare, pescato del giorno e primi piatti leggeri.',
+    featured: true,
     image: '/images/vermentino.jpeg',
   },
   {
-    id: 'w-lig-3',
-    name: 'Pigato',
-    producer: 'Lunae',
-    region: 'Colli di Luni, Liguria',
-    year: '2021',
+    id: 'w-lig-2',
+    name: 'Moscatello di Taggia',
+    producer: 'Maixei',
+    region: 'Riviera Ligure di Ponente',
+    year: '2025',
     type: 'Bianco',
     category: 'liguria',
     description:
-      'Pigato dalla struttura importante, sapore ricco e finale lungo. Tra i bianchi liguri più complessi.',
-    tastingNotes: ['Frutto giallo', 'Erbe aromatiche', 'Mandorla'],
-    pairing: 'Pesci in salsa, risotti al nero',
-    image: '/images/pigato.jpeg',
+      'Bianco aromatico e suadente, perla rara ligure. Sorso fresco e avvolgente con inconfondibili profumi floreali.',
+    tastingNotes: ['Fiori d\'arancio', 'Pesca bianca', 'Salvia'],
+    pairing: 'Antipasti della tradizione ligure, crostacei, formaggi freschi e pasticceria secca.',
+    image: '/images/moscatello.jpeg',
   },
 
-  // Italia
+  // ITALIA
   {
     id: 'w-ita-1',
-    name: 'Barolo',
-    producer: 'Giuseppe Rinaldi',
-    region: 'Piemonte',
-    year: '2017',
-    type: 'Rosso',
+    name: 'Pinot Grigio Riserva "Giatl"',
+    producer: 'Peter Zemmer',
+    region: 'Alto Adige, Italia',
+    year: '2023',
+    type: 'Bianco',
     category: 'italia',
     description:
-      'Il re dei vini italiani. Nebbiolo di struttura, lungo affinamento, profumi complessi che si evolvono nel tempo.',
-    tastingNotes: ['Tartrato', 'Rosa appassita', 'Spezie'],
-    pairing: 'Carni rosse, brasati, formaggi',
-    featured: true,
-    image:
-      '/images/barolo.jpg',
+      'Pinot Grigio di grande struttura ed eleganza alpina. Sorso avvolgente e bilanciato da una vibrante mineralità.',
+    tastingNotes: ['Pera matura', 'Fiori di campo', 'Leggera vaniglia'],
+    pairing: 'Pesce al forno, carni bianche saporite, risotti ricchi e formaggi di media stagionatura.',
+    image: '/images/pinot.jpeg',
   },
   {
     id: 'w-ita-2',
-    name: 'Brunello di Montalcino',
-    producer: 'Biondi Santi',
-    region: 'Toscana',
-    year: '2016',
+    name: 'Barbaresco',
+    producer: 'Marolo',
+    region: 'Piemonte, Italia',
+    year: '2022',
     type: 'Rosso',
     category: 'italia',
     description:
-      'Sangiovese in purezza, lungo affinamento in botte grande. Eleganza toscana che sfida il tempo.',
-    tastingNotes: ['Ciliegia', 'Cuoio', 'Tabacco'],
-    pairing: 'Carni arrosto, cacciagione',
-    image:
-      '/images/brunello.jpg',
+      'Nebbiolo in purezza di aristocratica eleganza. Bouquet etereo, tannini nobili e finale di lunga persistenza.',
+    tastingNotes: ['Viola appassita', 'Frutti rossi', 'Spezie dolci'],
+    pairing: 'Arrosti, selvaggina, primi piatti ricchi e formaggi stagionati.',
+    featured: true,
+    image: '/images/marolo.jpeg',
   },
   {
     id: 'w-ita-3',
-    name: 'Etna Rosso',
-    producer: 'Frank Cornelissen',
-    region: 'Sicilia',
-    year: '2020',
+    name: 'Lagrein',
+    producer: 'Peter Zemmer',
+    region: 'Alto Adige, Italia',
+    year: '2024',
     type: 'Rosso',
     category: 'italia',
     description:
-      'Nerello Mascalese coltivato sui vulcani dell’Etna. Vino di terroir, fresco e vibrante.',
-    tastingNotes: ['Frutti rossi', 'Pietra focaia', 'Fumo'],
-    pairing: 'Carni bianche, selvaggina',
-    image:
-      '/images/etnarosso.png',
+      'Rosso autoctono dal carattere deciso e fitto. Sorso vellutato di gran corpo con un finale morbidamente speziato.',
+    tastingNotes: ['Frutti di bosco scuri', 'Cioccolato fondente', 'Viola'],
+    pairing: 'Taglieri di salumi saporiti, carni rosse alla griglia e formaggi di media o lunga stagionatura.',
+    image: '/images/lagrein.jpeg',
+  },
+  {
+    id: 'w-ita-4',
+    name: 'Gewürztraminer',
+    producer: 'Peter Zemmer',
+    region: 'Alto Adige, Italia',
+    year: '2025',
+    type: 'Bianco',
+    category: 'italia',
+    description:
+      'Emblema dell\'aromaticità altoatesina. Sorso ricco e morbido, unisce note floreali ed esotiche dal finale lungo.',
+    tastingNotes: ['Petali di rosa', 'Litchi', 'Spezie dolci'],
+    pairing: 'Piatti speziati, cucina asiatica, crostacei e formaggi saporiti o erborinati.',
+    image: '/images/gewurz.jpeg',
+  },
+  {
+    id: 'w-ita-5',
+    name: 'Derthona (Timorasso)',
+    producer: 'Claudio Mariotto',
+    region: 'Piemonte, Italia',
+    year: '2024',
+    type: 'Bianco',
+    category: 'italia',
+    description:
+      'Bianco autoctono di straordinaria struttura. Caldo, sapido e minerale, destinato a evolvere nel tempo.',
+    tastingNotes: ['Pesca gialla', 'Fiori d\'acacia', 'Pietra focaia'],
+    pairing: 'Antipasti ricchi, carni bianche, formaggi stagionati e piatti strutturati a base di pesce.',
+    image: '/images/derthona.jpeg',
+  },
+  {
+    id: 'w-ita-6',
+    name: 'Chardonnay',
+    producer: 'Peter Zemmer',
+    region: 'Alto Adige, Italia',
+    year: '2024',
+    type: 'Bianco',
+    category: 'italia',
+    description:
+      'Classico internazionale di grande eleganza alpina. Sorso fresco, perfettamente armonico e dalla spinta minerale.',
+    tastingNotes: ['Mela Golden', 'Fiori bianchi', 'Note minerali'],
+    pairing: 'Antipasti leggeri, primi piatti a base di pesce, carni bianche e verdure di stagione.',
+    image: '/images/chardonnay.jpeg',
   },
 
-  // Francia
+  // FRANCIA
   {
     id: 'w-fra-1',
-    name: 'Châteauneuf-du-Pape',
-    producer: 'Château de Beaucastel',
-    region: 'Rhône, Francia',
-    year: '2018',
+    name: 'Côtes d\'Auxerre',
+    producer: 'Domaine Verret',
+    region: 'Bourgogne, Francia',
+    year: '2024',
     type: 'Rosso',
     category: 'francia',
     description:
-      'Blend di tredici vitigni del sud della Francia. Vino generoso, speziato, di grande longevità.',
-    tastingNotes: ['Prugna', 'Liquirizia', 'Garrigue'],
-    pairing: 'Carne arrosto, formaggi forti',
-    image:
-      '/images/beaucastel.png',
+      'Pinot Noir elegante e fruttato del terroir borgognone. Spicca per la vibrante freschezza e i tannini morbidi.',
+    tastingNotes: ['Ciliegia', 'Sottobosco', 'Spezie leggere'],
+    pairing: 'Carni bianche, anatra arrosto, formaggi a crosta fiorita.',
+    image: '/images/verret.jpeg',
   },
   {
     id: 'w-fra-2',
-    name: 'Chablis Premier Cru',
-    producer: 'Domaine Laroche',
-    region: 'Borgogna, Francia',
-    year: '2020',
-    type: 'Bianco',
+    name: 'Léoville Las Cases',
+    producer: 'Château Léoville Las Cases',
+    region: 'Saint-Julien, Francia',
+    year: '2010',
+    type: 'Rosso',
     category: 'francia',
     description:
-      'Chardonnay su suoli calcarei del Kimmeridgiano. Freschezza minerale e eleganza pura.',
-    tastingNotes: ['Agrumi', 'Gesso', 'Fiori bianchi'],
-    pairing: 'Pesce crudo, ostriche',
-    image:
-      '/images/premiercru.png',
+      'Rosso bordolese leggendario di maestosa complessità. Tannini fitti, note terziarie e finale incredibilmente profondo.',
+    tastingNotes: ['Ribes nero', 'Legno di cedro', 'Grafite'],
+    pairing: 'Carni rosse strutturate, agnello arrosto, selvaggina nobile.',
+    featured: true,
+    image: '/images/recolte.jpeg',
   },
   {
     id: 'w-fra-3',
-    name: 'Sancerre',
-    producer: 'Henri Bourgeois',
-    region: 'Loira, Francia',
-    year: '2021',
+    name: 'Minuty Prestige',
+    producer: 'Minuty',
+    region: 'Côtes de Provence, Francia',
+    year: '2025',
+    type: 'Rosato',
+    category: 'francia',
+    description:
+      'Rosé iconico, simbolo dell\'eleganza provenzale. Sorso fresco e vivace, di grande finezza e vibrante mineralità.',
+    tastingNotes: ['Pompelmo rosa', 'Fragolina di bosco', 'Fiori bianchi'],
+    pairing: 'Crudi di mare, crostacei, insalate estive e piatti leggeri della cucina mediterranea.',
+    image: '/images/minuty.jpeg',
+  },
+  {
+    id: 'w-fra-4',
+    name: 'Chablis',
+    producer: 'Domaine Hamelin',
+    region: 'Bourgogne, Francia',
+    year: '2024',
     type: 'Bianco',
     category: 'francia',
     description:
-      'Sauvignon Blanc della Loira. Vino asciutto, profumato, con la tipica mineralità dei suoli calcarei.',
-    tastingNotes: ['Ribes', 'Asparago', 'Mineralità'],
-    pairing: 'Caprino, pesce leggero',
-    image:
-      '/images/sancerre.png',
+      'Espressione pura dello Chardonnay senza rovere. Spicca per la vibrante freschezza e la tesa nota minerale.',
+    tastingNotes: ['Mela verde', 'Limone', 'Sasso bagnato'],
+    pairing: 'Ostriche, crudi di mare, crostacei, sushi e formaggi caprini freschi.',
+    image: '/images/chablis.jpeg',
   },
 
-  // Bollicine
+  // BOLLICINE
   {
     id: 'w-bol-1',
-    name: 'Champagne Brut',
-    producer: 'Krug',
-    region: 'Champagne, Francia',
-    year: 'NV',
-    type: 'Bollicine',
-    category: 'bollicine',
-    description:
-      'Grande Cuvée di Krug. Un blend di oltre 120 vini, affinamento lungo in cantina. Eleganza assoluta.',
-    tastingNotes: ['Brioche', 'Mela', 'Mandorla'],
-    pairing: 'Aperitivo, crostacei',
-    featured: true,
-    image:
-      '/images/champagne.png',
-  },
-  {
-    id: 'w-bol-2',
-    name: 'Franciacorta Cuvée',
-    producer: 'Bellavista',
+    name: 'Franciacorta Brut',
+    producer: 'La Fiorita',
     region: 'Lombardia, Italia',
-    year: '2018',
+    year: 'S.A.',
     type: 'Bollicine',
     category: 'bollicine',
     description:
-      'Metodo classico italiano di grande livello. Perlage fine, profumi complessi, persistenza lunga.',
-    tastingNotes: ['Pane tostato', 'Agrumi', 'Fiori'],
-    pairing: 'Aperitivo, antipasti',
-    image:
-      '/images/franciacorta.png',
-  },
-  {
-    id: 'w-bol-3',
-    name: 'Prosecco Superiore',
-    producer: 'Valdo',
-    region: 'Valdobbiadene, Veneto',
-    year: '2022',
-    type: 'Bollicine',
-    category: 'bollicine',
-    description:
-      'Glera coltivata sui colli di Valdobbiadene. Fresco, fruttato, elegante nel perlage.',
-    tastingNotes: ['Mela verde', 'Pera', 'Acacia'],
-    pairing: 'Aperitivo, dessert leggeri',
-    image:
-      '/images/valdobbiadene.png',
+      'Metodo Classico di grande eleganza e freschezza. Perlage fine, sorso cremoso con un vibrante finale agrumato.',
+    tastingNotes: ['Crosta di pane', 'Fiori bianchi', 'Scorza di limone'],
+    pairing: 'Perfetto come aperitivo, si sposa magnificamente con crudi di mare, fritture leggere, ostriche e risotti delicati.',
+    featured: true,
+    image: '/images/brut.jpeg',
   },
 ];

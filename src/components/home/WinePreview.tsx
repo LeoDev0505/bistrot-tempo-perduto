@@ -45,13 +45,13 @@ export function WinePreview() {
               <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
                 Una cantina da
                 <span className="block italic text-amber-light/90">
-                  mille e più etichette
+                  oltre cinquanta etichette
                 </span>
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-8 text-cream/60 leading-relaxed text-lg">
-                La nostra cantina raccoglie oltre mille etichette, con una
+                La nostra cantina raccoglie oltre cinquanta etichette, con una
                 selezione dedicata ai vitigni liguri, ai grandi rossi italiani
                 e ai classici francesi. Ogni piatto trova il suo abbinamento.
               </p>

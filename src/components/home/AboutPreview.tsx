@@ -37,7 +37,7 @@ export function AboutPreview() {
 
             <Reveal delay={0.2}>
               <p className="mt-8 text-cream/60 leading-relaxed text-lg max-w-xl">
-                Da oltre vent’anni, nel cuore di Imperia, custodiamo un’idea
+                Da oltre nove anni, nel cuore di Imperia, custodiamo un’idea
                 semplice: che una cena non sia solo un pasto, ma un’esperienza
                 da ricordare. Ispirata ai bistrot francesi e radicata nella
                 tradizione ligure.

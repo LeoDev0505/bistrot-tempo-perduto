@@ -48,7 +48,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     subtitle: 'Fatta a mano ogni mattina',
     description:
       'La pasta fresca è il cuore della cucina ligure. Tirata al mattarello, ripiena con cura, cotta al momento.',
-    image: '/images/tagliolini.jpg',
+    image: '/images/pansoti.jpg',
   },
   {
     id: 'secondi',
@@ -105,7 +105,7 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'ant-5',
     name: 'Baccalà mantecato',
-    description: 'Baccalà lavorato ad arte con olio extravergine, servito con crostini.',
+    description: 'Baccalà lavorato ad arte con olio di oliva, servito con crostini.',
     category: 'antipasti',
     price: '18 €',
     tags: ['Tradizione'],
@@ -192,41 +192,49 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'pas-2',
+    name: 'Pansoti ai Gamberi e Pomodorini',
+    description: 'Tipici pansoti della tradizione ligure, conditi con gamberi, pomodorini freschi e un tocco di verdurine croccanti.',
+    category: 'pasta',
+    price: '18 €',
+    tags: ['Pasta Fresca'],
+  },
+  {
+    id: 'pas-3',
     name: 'Gnocchi con polpo e datterini',
     description: 'Gnocchi fatti in casa con polpo verace e datterini gialli e rossi.',
     category: 'pasta',
     price: '22 €',
   },
   {
-    id: 'pas-3',
+    id: 'pas-4',
     name: 'Gnocchi con Cozze e Fichi',
     description: 'Abbinamento audace e riuscito tra la sapidità delle cozze e la dolcezza dei fichi.',
     category: 'pasta',
     price: '22 €',
   },
   {
-    id: 'pas-4',
+    id: 'pas-5',
     name: 'Pappardelle con acciughe',
     description: 'Pappardelle mantecate con acciughe, mandorle croccanti e pinoli.',
     category: 'pasta',
     price: '20 €',
   },
   {
-    id: 'pas-5',
+    id: 'pas-6',
     name: 'Tagliatelle Verdi al Ragù di Anatra',
     description: 'Pasta all\'uovo verde con ragù d\'anatra tagliato al coltello.',
     category: 'pasta',
     price: '18 €',
   },
   {
-    id: 'pas-6',
+    id: 'pas-7',
     name: 'Tagliatelle Verdi, Zucchine, Gamberi e Bottarga',
     description: 'Un trionfo di sapori con zucchine fresche, gamberi e spolverata di bottarga.',
     category: 'pasta',
     price: '20 €',
   },
   {
-    id: 'pas-7',
+    id: 'pas-8',
     name: 'Raviolini Verdi al ragù di manzo',
     description: 'Ravioli verdi ripieni di carne, serviti con ragù di manzo a lenta cottura.',
     category: 'pasta',
@@ -234,7 +242,7 @@ export const MENU_ITEMS: MenuItem[] = [
     tags: ['Pasta Ripiena'],
   },
   {
-    id: 'pas-8',
+    id: 'pas-9',
     name: 'Ravioli Verdi Burro e Salvia',
     description: 'Ravioli delicati esaltati dalla semplicità del burro fuso e della salvia.',
     category: 'pasta',
@@ -242,14 +250,14 @@ export const MENU_ITEMS: MenuItem[] = [
     tags: ['Pasta Ripiena', 'Vegetariano'],
   },
   {
-    id: 'pas-9',
+    id: 'pas-10',
     name: 'Lasagne della casa',
     description: 'Fatte al forno con zucchine trombette liguri e pesto genovese.',
     category: 'pasta',
     price: '18 €',
   },
   {
-    id: 'pas-10',
+    id: 'pas-11',
     name: 'Risotto con trombette e cuore di Bue',
     description: 'Risotto mantecato con zucchine, pomodoro cuore di bue, cipolla e basilico.',
     category: 'pasta',
@@ -257,14 +265,14 @@ export const MENU_ITEMS: MenuItem[] = [
     tags: ['Vegetariano'],
   },
   {
-    id: 'pas-11',
+    id: 'pas-12',
     name: 'Fregola di Mare',
     description: 'Fregola sarda risottata con scampi, cozze, calamari, vongole e merluzzo.',
     category: 'pasta',
     price: '28 €',
   },
   {
-    id: 'pas-12',
+    id: 'pas-13',
     name: 'Paëlla alla Valenciana',
     description: 'Il classico piatto spagnolo ricco di sapore, con carne, pesce e zafferano.',
     category: 'pasta',
@@ -321,7 +329,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'mar-7',
-    name: 'Cozze alla marinara',
+    name: 'Sautè di Cozze',
     description: 'Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodoro.',
     category: 'mare',
     price: '18 €',
@@ -379,21 +387,21 @@ export const MENU_ITEMS: MenuItem[] = [
   // ==========================================
   // DOLCI (Mantenuti dalla lista originale)
   // ==========================================
-  {
+{
     id: 'dol-1',
-    name: 'Crème Brûlée alla Lavanda',
-    description: 'Crème brûlée classica con infusione di lavanda di Provenza, zucchero caramellato al momento.',
+    name: 'Tiramisù della Casa',
+    description: 'Il nostro classico tiramisù artigianale, preparato con savoiardi inzuppati nel caffè espresso e una soffice e golosa crema al mascarpone.',
     category: 'dolci',
-    price: '10 €',
-    tags: ['Classico francese'],
+    price: '8 €',
+    tags: ['Fatto in casa'],
   },
-  {
+{
     id: 'dol-2',
-    name: 'Torta Caprese',
-    description: 'Torta al cioccolato fondente e mandorle senza farina, cuore morbido, cioccolato caldo a parte.',
+    name: 'Torta di Sandra',
+    description: 'Un dolce omaggio alla nostra storica cuoca: una deliziosa e avvolgente torta di crema cotta, dalla consistenza morbida e dal sapore genuino di una volta.',
     category: 'dolci',
     price: '10 €',
-    tags: ['Senza glutine'],
+    tags: ['Fatto in casa'],
   },
   {
     id: 'dol-3',

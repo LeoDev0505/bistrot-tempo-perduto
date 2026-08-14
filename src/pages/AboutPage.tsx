@@ -8,7 +8,7 @@ import { IMAGE, RESTAURANT } from '@/lib/constants';
 // Inline image URLs for the atmosphere strip (gallery page removed).
 const STRIP_IMAGES = [
   '/images/sociality.jpg',
-  '/images/immagini.jpeg',
+  '/images/candle.png',
   '/images/musicista.jpeg',
 ];
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <SectionLabel label="Le Origini" />
               <Reveal delay={0.1}>
                 <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                  Nato nel 2003 da un’idea
+                  Nato nel 2017 da un’idea
                   <span className="block italic text-amber-light/90">
                     di tempo e di pazienza
                   </span>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-2xl">
                   La nostra cucina si rifà ai{' '}
                   <span className="text-amber-light/90">
-                    ricettari della nonna
+                    ricettari della cuoca Sandra
                   </span>
                   . I nostri piatti sono fatti di{' '}
                   <span className="text-amber-light/90">
@@ -178,9 +178,9 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-xl">
-                  Anni passati in Provenza ci hanno insegnato il
+                  Anni passati in Liguria ci hanno insegnato il
                   rispetto per il tempo: il tempo di un fondo che riduce, di un
-                  brasato che cuoce sei ore, di una pasta che riposa. 
+                  brasato che cuoce sei ore, della nostra focaccia che lievita. 
                 </p>
               </Reveal>
             </div>

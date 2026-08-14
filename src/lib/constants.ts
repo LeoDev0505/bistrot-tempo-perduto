@@ -11,7 +11,7 @@ export const RESTAURANT = {
   email: 'ilbistrotdeltempoperduto@pec.it',
   emailHref: 'mailto:ilbistrotdeltempoperduto@pec.it',
 address: {
-    street: 'Piazza Nino Bixio, Calata G.B. Cuneo, 1',
+    street: 'Calata G.B. Cuneo, angolo Piazza Nino Bixio, 2a',
     city: 'Imperia',
     region: 'Liguria',
     postalCode: '18100',
