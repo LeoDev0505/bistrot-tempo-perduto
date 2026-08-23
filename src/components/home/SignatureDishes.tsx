@@ -3,54 +3,33 @@ import { ButtonLink } from '@/components/ui/Button';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { SmartImage } from '@/components/ui/SmartImage';
-import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
+// L'array si è snellito: contiene solo gli ID collegati al JSON e le immagini!
 const DISHES = [
-  {
-    name: 'Escargots de Bourgogne',
-    description:
-      'Lumache alla borgognona gratinate nel guscio con burro, aglio e prezzemolo.',
-    image: '/images/lumache.jpg',
-    tag: 'Dal Mare',
-  },
-  {
-    name: 'Baccalà mantecato',
-    description:
-      "Baccalà lavorato ad arte con un filo d'olio d'oliva, servito con un crostino croccante.",
-    image: '/images/baccala.jpg',
-    tag: 'Pasta Fresca',
-  },
-{
-  name: 'Crudo di Gamberi Freschi',
-  description: 'Freschissimi gamberi serviti al naturale su un letto di ghiaccio tritato, per esaltarne la purezza e la naturale dolcezza.',
-  image: '/images/gamberi.jpg',
-  tag: 'Dal Mare',
-},
-  {
-    name: 'Sautè di Cozze',
-    description:
-      'Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodorini, servite con crostino dorato e limone.',
-    image: '/images/cozze.png',
-    tag: 'Dolce',
-  },
+  { id: 'escargots', image: '/images/lumache.jpg' },
+  { id: 'baccala', image: '/images/baccala.jpg' },
+  { id: 'gamberi', image: '/images/gamberi.jpg' },
+  { id: 'cozze', image: '/images/cozze.png' },
 ];
 
 export function SignatureDishes() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative py-24 md:py-40 bg-charcoal-dark grain-overlay">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
         <div className="flex flex-col items-center text-center mb-16 md:mb-24">
-          <SectionLabel label="I Piatti" align="center" />
+          <SectionLabel label={t('signatureDishes.label')} align="center" />
           <Reveal delay={0.1}>
             <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] max-w-3xl text-balance">
-              I sapori che raccontano
-              <span className="block italic text-amber-light/90">la nostra cucina</span>
+              {t('signatureDishes.title')}
+              <span className="block italic text-amber-light/90">{t('signatureDishes.titleItalic')}</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 text-cream/60 leading-relaxed max-w-xl">
-              Una selezione di piatti che uniscono la tradizione ligure
-              all’eleganza francese. Ingredienti di stagione, lavorati a mano.
+              {t('signatureDishes.description')}
             </p>
           </Reveal>
         </div>
@@ -58,7 +37,7 @@ export function SignatureDishes() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {DISHES.map((dish, i) => (
             <motion.article
-              key={dish.name}
+              key={dish.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
@@ -74,20 +53,20 @@ export function SignatureDishes() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <SmartImage
                   src={dish.image}
-                  alt={dish.name}
+                  alt={t(`signatureDishes.items.${dish.id}.name`)}
                   className="h-full w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso-950 via-espresso-950/20 to-transparent" />
                 <span className="absolute top-6 left-6 text-[0.65rem] uppercase tracking-[0.3em] text-amber-gold bg-espresso-950/60 backdrop-blur-sm px-3 py-1.5">
-                  {dish.tag}
+                  {t(`signatureDishes.items.${dish.id}.tag`)}
                 </span>
               </div>
               <div className="pt-6">
                 <h3 className="font-serif text-2xl md:text-3xl text-cream group-hover:text-amber-gold transition-colors duration-500">
-                  {dish.name}
+                  {t(`signatureDishes.items.${dish.id}.name`)}
                 </h3>
                 <p className="mt-3 text-cream/55 leading-relaxed">
-                  {dish.description}
+                  {t(`signatureDishes.items.${dish.id}.description`)}
                 </p>
               </div>
             </motion.article>
@@ -96,7 +75,7 @@ export function SignatureDishes() {
 
         <div className="mt-16 md:mt-24 flex justify-center">
           <ButtonLink to="/menu" variant="outline" withArrow>
-            Vedi il Menù Completo
+            {t('signatureDishes.menuBtn')}
           </ButtonLink>
         </div>
       </div>

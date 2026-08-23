@@ -2,16 +2,22 @@ import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { NAV_LINKS, RESTAURANT } from '@/lib/constants';
+import { NAV_LINKS } from '@/lib/constants';
 import { useScrolled } from '@/hooks/useScrolled';
+import { useTranslation } from 'react-i18next';
 
 export function Navbar() {
   const scrolled = useScrolled(40);
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/';
-
+  
+  const { t, i18n } = useTranslation();
   const solid = scrolled || !isHome || open;
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <>
@@ -26,11 +32,13 @@ export function Navbar() {
         }`}
       >
         <nav className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
-          <div className="flex h-20 md:h-24 items-center justify-between gap-4">
-            {/* Logo / Wordmark */}
+          {/* Aggiunto "relative" al contenitore padre */}
+          <div className="relative flex h-20 md:h-24 items-center justify-between gap-4">
+            
+            {/* Blocco 1: Logo (Aggiunto z-10 per tenerlo sopra) */}
             <Link
               to="/"
-              className="group flex flex-col leading-none shrink-0"
+              className="group flex flex-col leading-none shrink-0 z-10"
               onClick={() => setOpen(false)}
             >
               <span className="font-serif text-xl md:text-2xl text-cream tracking-wide transition-colors duration-500 group-hover:text-amber-gold">
@@ -41,8 +49,8 @@ export function Navbar() {
               </span>
             </Link>
 
-            {/* Desktop nav */}
-            <ul className="hidden lg:flex items-center gap-6 xl:gap-10 shrink">
+            {/* Blocco 2: Desktop nav (POSIZIONAMENTO ASSOLUTO AL CENTRO MATEMATICO) */}
+            <ul className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center gap-6 xl:gap-10 w-max">
               {NAV_LINKS.map((link) => (
                 <li key={link.to}>
                   <NavLink
@@ -55,19 +63,28 @@ export function Navbar() {
                       }`
                     }
                   >
-                    {link.label}
+                    {t(`navbar.links.${link.to.replace('/', '') || 'home'}`, link.label)}
                   </NavLink>
                 </li>
               ))}
             </ul>
 
-            {/* CTA + mobile toggle */}
-            <div className="flex items-center gap-6 shrink-0">
+            {/* Blocco 3: CTA + Lingue (Aggiunto z-10 per tenerlo sopra) */}
+            <div className="flex items-center justify-end gap-6 shrink-0 z-10">
+              
+              <div className="hidden lg:flex gap-2 text-xs uppercase tracking-[0.2em] font-sans text-cream/50">
+                <button onClick={() => changeLanguage('it')} className={i18n.language === 'it' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>IT</button>
+                <span>|</span>
+                <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>EN</button>
+                <span>|</span>
+                <button onClick={() => changeLanguage('fr')} className={i18n.language === 'fr' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>FR</button>
+              </div>
+
               <Link
                 to="/reservations"
                 className="hidden lg:inline-flex items-center justify-center px-6 py-3 text-xs uppercase tracking-[0.2em] font-sans border border-amber-gold/60 text-amber-gold hover:bg-amber-gold hover:text-espresso-950 transition-all duration-500 whitespace-nowrap"
               >
-                Prenota
+                {t('navbar.book')}
               </Link>
 
               <button
@@ -82,7 +99,7 @@ export function Navbar() {
         </nav>
       </motion.header>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer (Invariato) */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -109,30 +126,39 @@ export function Navbar() {
                       }`
                     }
                   >
-                    {link.label}
+                     {t(`navbar.links.${link.to.replace('/', '') || 'home'}`, link.label)}
                   </NavLink>
                 </motion.div>
               ))}
+              
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + NAV_LINKS.length * 0.08, duration: 0.6 }}
+                className="flex flex-col items-center gap-6"
               >
                 <Link
                   to="/reservations"
                   onClick={() => setOpen(false)}
                   className="mt-4 inline-flex items-center justify-center px-8 py-4 text-xs uppercase tracking-[0.2em] border border-amber-gold text-amber-gold hover:bg-amber-gold hover:text-espresso-950 transition-all duration-500"
                 >
-                  Prenota un Tavolo
+                  {t('navbar.bookTable')}
                 </Link>
+
+                <div className="flex gap-4 text-sm uppercase tracking-[0.2em] font-sans text-cream/50 mt-4">
+                  <button onClick={() => changeLanguage('it')} className={i18n.language === 'it' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>IT</button>
+                  <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>EN</button>
+                  <button onClick={() => changeLanguage('fr')} className={i18n.language === 'fr' ? 'text-amber-gold' : 'hover:text-cream transition-colors'}>FR</button>
+                </div>
               </motion.div>
+
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
-                className="absolute bottom-10 text-xs tracking-[0.2em] uppercase text-cream/40"
+                className="absolute bottom-10 text-xs tracking-[0.2em] uppercase text-cream/40 text-center px-6"
               >
-                {RESTAURANT.subTagline}
+                {t('navbar.tagline')}
               </motion.p>
             </div>
           </motion.div>

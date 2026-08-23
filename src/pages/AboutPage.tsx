@@ -4,6 +4,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { IMAGE, RESTAURANT } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 // Inline image URLs for the atmosphere strip (gallery page removed).
 const STRIP_IMAGES = [
@@ -13,11 +14,13 @@ const STRIP_IMAGES = [
 ];
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <PageHero
-        eyebrow="La Casa"
-        title="Una storia di tempo e di gusti"
+        eyebrow={t('aboutPage.heroEyebrow')}
+        title={t('aboutPage.heroTitle')}
         image="/images/casa.jpg"
       />
 
@@ -37,81 +40,72 @@ export default function AboutPage() {
               </Reveal>
             </div>
             <div className="lg:col-span-7">
-              <SectionLabel label="Le Origini" />
+              <SectionLabel label={t('aboutPage.originsLabel')} />
               <Reveal delay={0.1}>
                 <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                  Nato nel 2017 da un’idea
+                  {t('aboutPage.originsTitle1')}
                   <span className="block italic text-amber-light/90">
-                    di tempo e di pazienza
+                    {t('aboutPage.originsTitle2')}
                   </span>
                 </h2>
               </Reveal>
               <Reveal delay={0.2}>
                 <p className="mt-8 text-cream/60 leading-relaxed text-lg max-w-2xl">
-                  C'era una volta{' '}
+                  {t('aboutPage.originsP1_1')}
                   <span className="text-amber-light/90">
-                    "Il Bistrot del Tempo Perduto"
+                    {t('aboutPage.originsP1_2')}
                   </span>
-                  , un delizioso angolo di paradiso fatto di candele, luci
-                  soffuse, profumi e oggetti che respirano l'aria di un'epoca
-                  passata.{' '}
+                  {t('aboutPage.originsP1_3')}
                   <span className="text-amber-light/90">
-                    Oggi è il momento di cambiare
+                    {t('aboutPage.originsP1_4')}
                   </span>
-                  , non nella sostanza, ma nei luoghi. Dopo un percorso sfidante
-                  e faticoso, siamo finalmente arrivati al traguardo: vi
-                  accogliamo in un{' '}
+                  {t('aboutPage.originsP1_5')}
                   <span className="text-amber-light/90">
-                    nuovo spazio dove arredi e colori emanano bellezza
-                  </span>{' '}
-                  e ricercatezza nei dettagli, senza mai lasciare indietro i nostri
-                  sapori.
+                    {t('aboutPage.originsP1_6')}
+                  </span>
+                  {t('aboutPage.originsP1_7')}
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-2xl">
-                  La nostra cucina si rifà ai{' '}
+                  {t('aboutPage.originsP2_1')}
                   <span className="text-amber-light/90">
-                    ricettari della cuoca Sandra
+                    {t('aboutPage.originsP2_2')}
                   </span>
-                  . I nostri piatti sono fatti di{' '}
+                  {t('aboutPage.originsP2_3')}
                   <span className="text-amber-light/90">
-                    ricordi e tradizioni
+                    {t('aboutPage.originsP2_4')}
                   </span>
-                  , come la pasta fresca e lo stoccafisso alla ligure. Da noi puoi
-                  ritrovare l'autentico{' '}
+                  {t('aboutPage.originsP2_5')}
                   <span className="text-amber-light/90">
-                    "piatto della domenica"
+                    {t('aboutPage.originsP2_6')}
                   </span>
-                  , quello che riporta alla mente i caldi pranzi in famiglia, per
-                  poi chiudere in dolcezza con i{' '}
+                  {t('aboutPage.originsP2_7')}
                   <span className="text-amber-light/90">
-                    dessert più classici
+                    {t('aboutPage.originsP2_8')}
                   </span>
-                  , semplicemente quelli della mamma.
+                  {t('aboutPage.originsP2_9')}
                 </p>
               </Reveal>
               <Reveal delay={0.4}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-2xl">
-                  Fuori tutto è{' '}
+                  {t('aboutPage.originsP3_1')}
                   <span className="text-amber-light/90">
-                    corsa e frenesia
+                    {t('aboutPage.originsP3_2')}
                   </span>
-                  , ma nel Bistrot no. Il nome "Tempo Perduto" continua a essere
-                  un{' '}
+                  {t('aboutPage.originsP3_3')}
                   <span className="text-amber-light/90">
-                    omaggio alle sere che sembrano non finire mai
-                  </span>{' '}
-                  e ai vini che si fanno aspettare. Qui è come se il{' '}
-                  <span className="text-amber-light/90">
-                    tempo si fermasse
+                    {t('aboutPage.originsP3_4')}
                   </span>
-                  , trasformando l'attesa in meraviglia. Lo spirito è lo stesso di
-                  sempre: grande cura per i dettagli, il sapore dei ricordi e{' '}
+                  {t('aboutPage.originsP3_5')}
                   <span className="text-amber-light/90">
-                    nessuna fretta
+                    {t('aboutPage.originsP3_6')}
                   </span>
-                  . E il nostro racconto continua con grandi novità... a presto.
+                  {t('aboutPage.originsP3_7')}
+                  <span className="text-amber-light/90">
+                    {t('aboutPage.originsP3_8')}
+                  </span>
+                  {t('aboutPage.originsP3_9')}
                 </p>
               </Reveal>
             </div>
@@ -131,13 +125,12 @@ export default function AboutPage() {
           <div className="max-w-3xl text-center">
             <Reveal>
               <p className="text-xs uppercase tracking-[0.4em] text-amber-gold/90 mb-6">
-                La Filosofia
+                {t('aboutPage.philosophyLabel')}
               </p>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="font-serif text-2xl md:text-4xl lg:text-5xl text-cream italic leading-[1.2] text-balance">
-                «Non serviamo solo cibo. Serviamo il lusso del tempo che fugge,
-                trasformato in memoria.»
+                {t('aboutPage.philosophyQuote')}
               </p>
             </Reveal>
           </div>
@@ -160,27 +153,23 @@ export default function AboutPage() {
               </Reveal>
             </div>
             <div className="lg:col-span-5 lg:order-1">
-              <SectionLabel label="L’Ispirazione" />
+              <SectionLabel label={t('aboutPage.inspirationLabel')} />
               <Reveal delay={0.1}>
                 <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                  Tra Liguria
+                  {t('aboutPage.inspirationTitle1')}
                   <span className="block italic text-amber-light/90">
-                    e Provenza
+                    {t('aboutPage.inspirationTitle2')}
                   </span>
                 </h2>
               </Reveal>
               <Reveal delay={0.2}>
                 <p className="mt-8 text-cream/60 leading-relaxed text-lg max-w-xl">
-                  La nostra cucina nasce dall’incontro tra due tradizioni che si
-                  somigliano: la Liguria dei pesti e del pesce azzurro, e la
-                  Francia delle salse madri e delle cotture lente.
+                  {t('aboutPage.inspirationP1')}
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed max-w-xl">
-                  Anni passati in Liguria ci hanno insegnato il
-                  rispetto per il tempo: il tempo di un fondo che riduce, di un
-                  brasato che cuoce sei ore, della nostra focaccia che lievita. 
+                  {t('aboutPage.inspirationP2')}
                 </p>
               </Reveal>
             </div>
@@ -193,37 +182,32 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
             <div className="lg:col-span-5">
-              <SectionLabel label="Cucina di Stagione" />
+              <SectionLabel label={t('aboutPage.seasonLabel')} />
               <Reveal delay={0.1}>
                 <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                  Il menù segue
+                  {t('aboutPage.seasonTitle1')}
                   <span className="block italic text-amber-light/90">
-                    il mercato e l’orto
+                    {t('aboutPage.seasonTitle2')}
                   </span>
                 </h2>
               </Reveal>
               <Reveal delay={0.2}>
                 <p className="mt-8 text-cream/60 leading-relaxed text-lg">
-                  Il nostro menù cambia con le stagioni e con la pesca del giorno.
-                  Lavoriamo con piccoli produttori dell’entroterra ligure e con
-                  i pescatori del mercato di Imperia, scegliendo solo il meglio.
+                  {t('aboutPage.seasonP1')}
                 </p>
               </Reveal>
               <Reveal delay={0.3}>
                 <p className="mt-6 text-cream/50 leading-relaxed">
-                  La tradizione ligure — il pesto, i pansoti, il pesce azzurro —
-                  incontra la tecnica francese: le salse madri, le cotture lente,
-                  la pasticceria classica. Un dialogo tra due cucine che si
-                  somigliano per amore del tempo e dell’ingrediente.
+                  {t('aboutPage.seasonP2')}
                 </p>
               </Reveal>
 
               <Reveal delay={0.4}>
                 <div className="mt-12 grid grid-cols-3 gap-8 border-t border-cream/10 pt-10">
                   {[
-                    { value: '20+', label: 'Anni di cucina' },
-                    { value: 'Ogni giorno', label: 'Pesca fresca' },
-                    { value: 'A mano', label: 'Pasta fresca' },
+                    { value: '20+', label: t('aboutPage.statsLabel1') },
+                    { value: t('aboutPage.statsValue2'), label: t('aboutPage.statsLabel2') },
+                    { value: t('aboutPage.statsValue3'), label: t('aboutPage.statsLabel3') },
                   ].map((stat) => (
                     <div key={stat.label}>
                       <p className="font-serif text-2xl md:text-3xl text-amber-gold">
@@ -248,7 +232,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/60 to-transparent pointer-events-none" />
               </div>
               <p className="mt-4 text-sm text-cream/40 font-serif italic">
-                «Il tempo è l’ingrediente che non si compra.»
+                {t('aboutPage.seasonQuote')}
               </p>
             </div>
           </div>
@@ -266,16 +250,15 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-espresso-950/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-3xl text-center px-6">
-          <SectionLabel label="L’Ospitalità" align="center" />
+          <SectionLabel label={t('aboutPage.hospitalityLabel')} align="center" />
           <Reveal delay={0.1}>
             <p className="mt-8 font-serif text-2xl md:text-4xl text-cream italic leading-[1.3] text-balance">
-              «Accogliamo ogni ospite come si accoglie un amico di lunga data:
-              con tempo, con cura, con la voglia di farlo sentire a casa.»
+              {t('aboutPage.hospitalityQuote')}
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 text-sm text-cream/40">
-              La nostra squadra — sala e cucina
+              {t('aboutPage.hospitalitySub')}
             </p>
           </Reveal>
         </div>
@@ -285,10 +268,10 @@ export default function AboutPage() {
       <section className="relative py-24 md:py-40 bg-charcoal-dark grain-overlay">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
           <div className="flex flex-col items-center text-center mb-16 md:mb-24">
-            <SectionLabel label="I Tre Pilastri" align="center" />
+            <SectionLabel label={t('aboutPage.pillarsLabel')} align="center" />
             <Reveal delay={0.1}>
               <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] max-w-3xl text-balance">
-                Cucina, Cantina, Atmosfera
+                {t('aboutPage.pillarsTitle')}
               </h2>
             </Reveal>
           </div>
@@ -297,18 +280,18 @@ export default function AboutPage() {
             {[
               {
                 num: '01',
-                title: 'Cucina',
-                text: 'Materia prima eccellente, tecnica classica, stagionalità rigorosa. Niente compromessi sull’ingrediente.',
+                title: t('aboutPage.kitchenTitle'),
+                text: t('aboutPage.kitchenText'),
               },
               {
                 num: '02',
-                title: 'Cantina',
-                text: "Una selezione curata di vini. Il nostro staff ti consiglierà l'abbinamento perfetto per i tuoi piatti.",
+                title: t('aboutPage.cellarTitle'),
+                text: t('aboutPage.cellarText'),
               },
               {
                 num: '03',
-                title: 'Atmosfera',
-                text: 'Poca luce, molta cura. Tavoli distanti, musica soft, candele accese ogni sera come un rito.',
+                title: t('aboutPage.atmosphereTitle'),
+                text: t('aboutPage.atmosphereText'),
               },
             ].map((p, i) => (
               <Reveal key={p.num} delay={i * 0.12}>
@@ -355,19 +338,19 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl text-center px-6">
           <Reveal>
             <h2 className="font-serif text-4xl md:text-5xl text-cream leading-[1.1] text-balance">
-              Vieni a scoprire
+              {t('aboutPage.ctaTitle1')}
               <span className="block italic text-amber-light/90">
-                il tempo perduto
+                {t('aboutPage.ctaTitle2')}
               </span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
               <ButtonLink to="/reservations" variant="solid" withArrow>
-                Prenota un Tavolo
+                {t('aboutPage.ctaBtnBook')}
               </ButtonLink>
               <ButtonLink to="/menu" variant="outline">
-                Vedi il Menù
+                {t('aboutPage.ctaBtnMenu')}
               </ButtonLink>
             </div>
           </Reveal>

@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { ButtonLink } from '@/components/ui/Button';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative h-screen min-h-[700px] overflow-hidden">
       {/* Background image — eager for LCP, no scroll-linked transforms */}
@@ -24,15 +27,15 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-16 md:pt-24 pb-20">
         
-        {/* Rimosso il margine sinistro su mobile per centrarlo, mantenuto su desktop (md:ml-20) */}
+        {/* Rimosso ml-20 e aggiunto -translate-x per spingere a sinistra. Modifica l'8 per regolarlo! */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-4 md:mb-6 md:ml-20"
+          className="mb-4 md:mb-6 -translate-x-4 md:-translate-x-8"
         >
           <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-amber-gold/90">
-            Imperia · Liguria · Dal 2003
+            {t('hero.location')}
           </p>
         </motion.div>
 
@@ -42,9 +45,9 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-cream text-shadow-strong leading-[0.95] max-w-5xl"
         >
-          Il Bistrot
+          {t('hero.title')}
           <span className="block font-serif italic text-amber-light/90 mt-2">
-            del Tempo Perduto
+            {t('hero.subtitle')}
           </span>
         </motion.h1>
 
@@ -54,8 +57,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-base md:text-lg text-cream/70 leading-relaxed font-light"
         >
-          Dove il tempo rallenta e ogni cena diventa un ricordo.
-          Una cucina senza tempo tra Liguria e Francia.
+          {t('hero.description')}
         </motion.p>
 
         <motion.div
@@ -65,10 +67,10 @@ export function Hero() {
           className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center gap-5"
         >
           <ButtonLink to="/reservations" variant="solid" withArrow>
-            Prenota un Tavolo
+            {t('hero.bookBtn')}
           </ButtonLink>
           <ButtonLink to="/menu" variant="outline">
-            Esplora il Menù
+            {t('hero.menuBtn')}
           </ButtonLink>
         </motion.div>
       </div>
@@ -82,7 +84,7 @@ export function Hero() {
       >
         <div className="flex flex-col items-center gap-2">
           <span className="text-[0.65rem] uppercase tracking-[0.3em] text-cream/40">
-            Scopri
+            {t('hero.scroll')}
           </span>
           <div className="w-px h-8 bg-gradient-to-b from-cream/40 to-transparent" />
         </div>

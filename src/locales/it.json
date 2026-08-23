@@ -1,0 +1,311 @@
+{
+  "navbar": {
+    "links": {
+      "home": "La Casa",
+      "about": "Chi Siamo",
+      "menu": "Menù",
+      "wines": "Cantina",
+      "contact": "Contatti"
+    },
+    "book": "Prenota",
+    "bookTable": "Prenota un Tavolo",
+    "tagline": "Dove il tempo rallenta e ogni cena diventa un ricordo."
+  },
+  "hero": {
+    "location": "Imperia · Liguria · Dal 2017",
+    "title": "Il Bistrot",
+    "subtitle": "del Tempo Perduto",
+    "description": "Dove il tempo rallenta e ogni cena diventa un ricordo. Una cucina senza tempo tra Liguria e Francia.",
+    "bookBtn": "Prenota un Tavolo",
+    "menuBtn": "Esplora il Menù",
+    "scroll": "Scopri"
+  },
+  "aboutPreview": {
+    "label": "La Casa",
+    "title": "Un luogo dove il tempo",
+    "titleItalic": "si ferma a tavola",
+    "description": "Da oltre nove anni, nel cuore di Imperia, custodiamo un’idea semplice: che una cena non sia solo un pasto, ma un’esperienza da ricordare. Ispirata ai bistrot francesi e radicata nella tradizione ligure.",
+    "button": "Scopri la nostra storia"
+  },
+  "atmosphere": {
+    "alt": "Atmosfera del bistrot",
+    "quote": "«Entrare qui è come varcare la soglia di un’altra epoca. Il tempo si dissolve, resta solo il piacere.»",
+    "signature": "— Imperia, Liguria"
+  },
+  "ctaReservation": {
+    "alt": "Tavola apparecchiata per la cena",
+    "subheading": "Prenota la tua serata",
+    "heading": "Riserva un tavolo",
+    "headingItalic": "e lascia che il tempo si fermi",
+    "bookBtn": "Prenota un Tavolo",
+    "contactBtn": "Contattaci"
+  },
+  "signatureDishes": {
+    "label": "I Piatti",
+    "title": "I sapori che raccontano",
+    "titleItalic": "la nostra cucina",
+    "description": "Una selezione di piatti che uniscono la tradizione ligure all’eleganza francese. Ingredienti di stagione, lavorati a mano.",
+    "menuBtn": "Vedi il Menù Completo",
+    "items": {
+      "escargots": {
+        "name": "Escargots de Bourgogne",
+        "description": "Lumache alla borgognona gratinate nel guscio con burro, aglio e prezzemolo.",
+        "tag": "Dal Mare"
+      },
+      "baccala": {
+        "name": "Baccalà mantecato",
+        "description": "Baccalà lavorato ad arte con un filo d'olio d'oliva, servito con un crostino croccante.",
+        "tag": "Pasta Fresca"
+      },
+      "gamberi": {
+        "name": "Crudo di Gamberi Freschi",
+        "description": "Freschissimi gamberi serviti al naturale su un letto di ghiaccio tritato, per esaltarne la purezza e la naturale dolcezza.",
+        "tag": "Dal Mare"
+      },
+      "cozze": {
+        "name": "Sautè di Cozze",
+        "description": "Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodorini, servite con crostino dorato e limone.",
+        "tag": "Dolce"
+      }
+    }
+  },
+  "winePreview": {
+    "altMain": "La cantina dei vini",
+    "altSecondary": "Bottiglia di vino selezionata",
+    "label": "La Cantina",
+    "title": "Una cantina da",
+    "titleItalic": "oltre cinquanta etichette",
+    "description1": "La nostra cantina raccoglie oltre cinquanta etichette, con una selezione dedicata ai vitigni liguri, ai grandi rossi italiani e ai classici francesi. Ogni piatto trova il suo abbinamento.",
+    "description2": "Il nostro personale è a disposizione per guidarti in un percorso di degustazione, dalla bollicina d’apertura al dolce finale.",
+    "button": "Esplora la Cantina"
+  },
+  "footer": {
+    "description": "Un angolo di Francia nel cuore della Liguria, dove il tempo si ferma e il sapore resta.",
+    "explore": "Esplora",
+    "reservations": "Prenotazioni",
+    "hours": "Orari",
+    "contacts": "Contatti",
+    "rights": "Tutti i diritti riservati.",
+    "location": "Imperia · Liguria · Italia"
+  },
+  "openingHours": [
+    { "days": "Lunedì", "time": "Chiuso" },
+    { "days": "Martedì e Giovedì", "time": "19:00 — 22:00" },
+    { "days": "Mercoledì", "time": "12:00 — 14:30 · 19:00 — 22:00" },
+    { "days": "Venerdì — Domenica", "time": "12:00 — 14:30 · 19:00 — 22:00" }
+  ],
+  "aboutPage": {
+    "heroEyebrow": "La Casa",
+    "heroTitle": "Una storia di tempo e di gusti",
+    "originsLabel": "Le Origini",
+    "originsTitle1": "Nato nel 2017 da un’idea",
+    "originsTitle2": "di tempo e di pazienza",
+    "originsP1_1": "C'era una volta ",
+    "originsP1_2": "\"Il Bistrot del Tempo Perduto\"",
+    "originsP1_3": ", un delizioso angolo di paradiso fatto di candele, luci soffuse, profumi e oggetti che respirano l'aria di un'epoca passata. ",
+    "originsP1_4": "Oggi è il momento di cambiare",
+    "originsP1_5": ", non nella sostanza, ma nei luoghi. Dopo un percorso sfidante e faticoso, siamo finalmente arrivati al traguardo: vi accogliamo in un ",
+    "originsP1_6": "nuovo spazio dove arredi e colori emanano bellezza",
+    "originsP1_7": " e ricercatezza nei dettagli, senza mai lasciare indietro i nostri sapori.",
+    "originsP2_1": "La nostra cucina si rifà ai ",
+    "originsP2_2": "ricettari della cuoca Sandra",
+    "originsP2_3": ". I nostri piatti sono fatti di ",
+    "originsP2_4": "ricordi e tradizioni",
+    "originsP2_5": ", come la pasta fresca e lo stoccafisso alla ligure. Da noi puoi ritrovare l'autentico ",
+    "originsP2_6": "\"piatto della domenica\"",
+    "originsP2_7": ", quello che riporta alla mente i caldi pranzi in famiglia, per poi chiudere in dolcezza con i ",
+    "originsP2_8": "dessert più classici",
+    "originsP2_9": ", semplicemente quelli della mamma.",
+    "originsP3_1": "Fuori tutto è ",
+    "originsP3_2": "corsa e frenesia",
+    "originsP3_3": ", ma nel Bistrot no. Il nome \"Tempo Perduto\" continua a essere un ",
+    "originsP3_4": "omaggio alle sere che sembrano non finire mai",
+    "originsP3_5": " e ai vini che si fanno aspettare. Qui è come se il ",
+    "originsP3_6": "tempo si fermasse",
+    "originsP3_7": ", trasformando l'attesa in meraviglia. Lo spirito è lo stesso di sempre: grande cura per i dettagli, il sapore dei ricordi e ",
+    "originsP3_8": "nessuna fretta",
+    "originsP3_9": ". E il nostro racconto continua con grandi novità... a presto.",
+    "philosophyLabel": "La Filosofia",
+    "philosophyQuote": "«Non serviamo solo cibo. Serviamo il lusso del tempo che fugge, trasformato in memoria.»",
+    "inspirationLabel": "L’Ispirazione",
+    "inspirationTitle1": "Tra Liguria",
+    "inspirationTitle2": "e Provenza",
+    "inspirationP1": "La nostra cucina nasce dall’incontro tra due tradizioni che si somigliano: la Liguria dei pesti e del pesce azzurro, e la Francia delle salse madri e delle cotture lente.",
+    "inspirationP2": "Anni passati in Liguria ci hanno insegnato il rispetto per il tempo: il tempo di un fondo che riduce, di un brasato che cuoce sei ore, della nostra focaccia che lievita.",
+    "seasonLabel": "Cucina di Stagione",
+    "seasonTitle1": "Il menù segue",
+    "seasonTitle2": "il mercato e l’orto",
+    "seasonP1": "Il nostro menù cambia con le stagioni e con la pesca del giorno. Lavoriamo con piccoli produttori dell’entroterra ligure e con i pescatori del mercato di Imperia, scegliendo solo il meglio.",
+    "seasonP2": "La tradizione ligure — il pesto, i pansoti, il pesce azzurro — incontra la tecnica francese: le salse madri, le cotture lente, la pasticceria classica. Un dialogo tra due cucine che si somigliano per amore del tempo e dell’ingrediente.",
+    "statsLabel1": "Anni di cucina",
+    "statsLabel2": "Pesca fresca",
+    "statsValue2": "Ogni giorno",
+    "statsLabel3": "Pasta fresca",
+    "statsValue3": "A mano",
+    "seasonQuote": "«Il tempo è l’ingrediente che non si compra.»",
+    "hospitalityLabel": "L’Ospitalità",
+    "hospitalityQuote": "«Accogliamo ogni ospite come si accoglie un amico di lunga data: con tempo, con cura, con la voglia di farlo sentire a casa.»",
+    "hospitalitySub": "La nostra squadra — sala e cucina",
+    "pillarsLabel": "I Tre Pilastri",
+    "pillarsTitle": "Cucina, Cantina, Atmosfera",
+    "kitchenTitle": "Cucina",
+    "kitchenText": "Materia prima eccellente, tecnica classica, stagionalità rigorosa. Niente compromessi sull’ingrediente.",
+    "cellarTitle": "Cantina",
+    "cellarText": "Una selezione curata di vini. Il nostro staff ti consiglierà l'abbinamento perfetto per i tuoi piatti.",
+    "atmosphereTitle": "Atmosfera",
+    "atmosphereText": "Poca luce, molta cura. Tavoli distanti, musica soft, candele accese ogni sera come un rito.",
+    "ctaTitle1": "Vieni a scoprire",
+    "ctaTitle2": "il tempo perduto",
+    "ctaBtnBook": "Prenota un Tavolo",
+    "ctaBtnMenu": "Vedi il Menù"
+  },
+  "contactPage": {
+    "heroEyebrow": "Contatti",
+    "heroTitle": "Vieni a trovarci",
+    "heroDescription": "Siamo nel cuore di Imperia, a pochi passi dal porto. Per qualsiasi richiesta — prenotazioni, eventi privati, cene di lavoro — siamo a tua disposizione.",
+    "whereLabel": "Dove Siamo",
+    "restaurantName": "Il Bistrot del Tempo Perduto",
+    "addressLabel": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email",
+    "hoursLabel": "Orari",
+    "bookBtn": "Prenota un Tavolo",
+    "mapTitle": "Mappa del ristorante",
+    "directionsBtn": "Indicazioni",
+    "openMapBtn": "Apri in mappa",
+    "socialTitle": "Seguici nei nostri canali"
+  },
+  "menuPage": {
+    "heroEyebrow": "Il Menù",
+    "heroTitle": "Il menù cambia con le stagioni",
+    "heroDescription": "Una cucina che segue il mercato, il mare e l’orto. Questi sono i piatti della nostra carta — una selezione che si rinnova ogni stagione.",
+    "noteLabel": "Nota",
+    "noteText": "«Il menù può variare secondo la disponibilità del mercato e della stagione. In mancanza di prodotto fresco, si potrebbe utilizzare prodotto gelo. Per allergie e intolleranze, parla con il nostro staff.»",
+    "bookBtn": "Prenota un Tavolo"
+  },
+  "notFoundPage": {
+    "eyebrow": "404 — Pagina non trovata",
+    "title1": "Questa pagina",
+    "titleItalic": "si è perduta nel tempo",
+    "description": "La pagina che cercavi non esiste o è stata spostata. Torna a scoprire la nostra cucina e la nostra storia.",
+    "homeBtn": "Torna alla Home",
+    "bookBtn": "Prenota un Tavolo"
+  },
+  "reservationsPage": {
+    "heroEyebrow": "Prenotazioni",
+    "heroTitle": "Riserva il tuo tavolo",
+    "heroDescription": "Contattaci direttamente per riservare il tuo tavolo.",
+    "howToLabel": "Come Prenotare",
+    "title": "Prenota Direttamente",
+    "callLabel": "Chiamaci",
+    "whatsappLabel": "Scrivici su WhatsApp",
+    "emailLabel": "Invia una Email / PEC",
+    "hoursLabel": "Orari di Apertura",
+    "contactsLabel": "Contatti Diretti",
+    "quote": "«Il tempo perduto è il tempo più bello.»"
+  },
+  "winePage": {
+    "heroEyebrow": "La Cantina",
+    "heroTitle": "Una storia di oltre 50 etichette",
+    "heroDescription": "Una cantina costruita in nove anni di ricerca. Vitigni liguri, grandi italiani, classici francesi e bollicine per ogni occasione. Qui sotto proponiamo qualche esempio della nostra cantina.",
+    "featuredBadge": "In Evidenza",
+    "tastingNotesLabel": "Note di degustazione",
+    "pairingLabel": "Abbinamento: ",
+    "sommelierEyebrow": "Il Sommelier",
+    "sommelierQuote": "«Ogni bottiglia racconta un territorio. Lasciatevi guidare in un percorso su misura, dall’aperitivo al dolce.»",
+    "bookBtn": "Prenota un Tavolo"
+  },
+  "menuCategories": {
+    "antipasti": {
+      "label": "Antipasti",
+      "subtitle": "Gli inizi",
+      "description": "I sapori che aprono la serata — mare crudo, verdure dell’orto e grandi classici."
+    },
+    "mare": {
+      "label": "Dal Mare",
+      "subtitle": "La pesca del giorno",
+      "description": "Ogni giorno una selezione diversa, scelta al mercato del mattino. Il pesce arriva intero e viene lavorato a mano."
+    },
+    "pasta": {
+      "label": "Pasta Fresca",
+      "subtitle": "Fatta a mano ogni mattina",
+      "description": "La pasta fresca è il cuore della cucina ligure. Tirata al mattarello, ripiena con cura, cotta al momento."
+    },
+    "secondi": {
+      "label": "Secondi Piatti",
+      "subtitle": "La terra e il fuoco",
+      "description": "Carni selezionate, cotture lente e salse ridotte al punto giusto. L’anima della nostra cucina."
+    },
+    "dolci": {
+      "label": "Dolci",
+      "subtitle": "La chiusura",
+      "description": "Dolci classici rivisitati con leggerezza. Lo zucchero non copre mai il sapore dell’ingrediente principale."
+    }
+  },
+  "menuItems": {
+    "ant-1": { "name": "6 Ostriche della Bretagna (N° 2 Concave)", "desc": "Pregiate ostriche bretoni servite freschissime al naturale.", "tags": ["Crudo", "Mare"] },
+    "ant-2": { "name": "Plateau Misto", "desc": "Selezione speciale composta da 3 ostriche e 3 crevettes.", "tags": ["Crudo"] },
+    "ant-3": { "name": "Crevettes à l'aïoli", "desc": "Gamberi serviti con la tradizionale e cremosa salsa aïoli francese.", "tags": [] },
+    "ant-4": { "name": "Gamberi alla catalana", "desc": "Gamberi freschi con pomodorini, cipolla rossa dolce e vinaigrette.", "tags": [] },
+    "ant-5": { "name": "Baccalà mantecato", "desc": "Baccalà lavorato ad arte con olio di oliva, servito con crostini.", "tags": ["Tradizione"] },
+    "ant-6": { "name": "Tartare di Tonno", "desc": "Battuta di tonno crudo al coltello in porzione da antipasto.", "tags": [] },
+    "ant-7": { "name": "Soufflé di Carote", "desc": "Morbido soufflé alle carote accompagnato da una ricca fonduta di gorgonzola.", "tags": ["Vegetariano"] },
+    "ant-8": { "name": "Soufflé di Trombette", "desc": "Soufflé di zucchine trombette liguri con salsina fresca di pomodoro.", "tags": ["Vegetariano"] },
+    "ant-9": { "name": "Panna Cotta Salata", "desc": "Una sfiziosa e delicata rivisitazione salata per aprire l'appetito.", "tags": [] },
+    "ant-10": { "name": "Verdure ripiene", "desc": "Le classiche verdure della tradizione ligure, farcite di magro e cotte al forno.", "tags": ["Tradizione Ligure", "Vegetariano"] },
+    "ant-11": { "name": "Parmigiana", "desc": "Parmigiana di melanzane con pomodoro, basilico e formaggio filante.", "tags": ["Vegetariano"] },
+    "ant-12": { "name": "Panzanella di Mare", "desc": "Insalata di pane povera arricchita con freschi frutti di mare.", "tags": [] },
+    "ant-13": { "name": "Insalata \"Condiglione\"", "desc": "Tradizionale insalata estiva del ponente ligure, fresca e ricca.", "tags": ["Vegetariano"] },
+    "ant-14": { "name": "Vitello Tonnato", "desc": "Girello cotto a bassa temperatura con morbida salsa tonnata.", "tags": [] },
+
+    "pas-1": { "name": "Tagliolini Verdi al Ragù di Pesce", "desc": "Pasta fresca agli spinaci condita con un ricco ragù di pescato.", "tags": ["Pasta Fresca"] },
+    "pas-2": { "name": "Pansoti ai Gamberi e Pomodorini", "desc": "Tipici pansoti della tradizione ligure, conditi con gamberi, pomodorini freschi e un tocco di verdurine croccanti.", "tags": ["Pasta Fresca"] },
+    "pas-3": { "name": "Gnocchi con polpo e datterini", "desc": "Gnocchi fatti in casa con polpo verace e datterini gialli e rossi.", "tags": [] },
+    "pas-4": { "name": "Gnocchi con Cozze e Fichi", "desc": "Abbinamento audace e riuscito tra la sapidità delle cozze e la dolcezza dei fichi.", "tags": [] },
+    "pas-5": { "name": "Pappardelle con acciughe", "desc": "Pappardelle mantecate con acciughe, mandorle croccanti e pinoli.", "tags": [] },
+    "pas-6": { "name": "Tagliatelle Verdi al Ragù di Anatra", "desc": "Pasta all'uovo verde con ragù d'anatra tagliato al coltello.", "tags": [] },
+    "pas-7": { "name": "Tagliatelle Verdi, Zucchine, Gamberi e Bottarga", "desc": "Un trionfo di sapori con zucchine fresche, gamberi e spolverata di bottarga.", "tags": [] },
+    "pas-8": { "name": "Raviolini Verdi al ragù di manzo", "desc": "Ravioli verdi ripieni di carne, serviti con ragù di manzo a lenta cottura.", "tags": ["Pasta Ripiena"] },
+    "pas-9": { "name": "Ravioli Verdi Burro e Salvia", "desc": "Ravioli delicati esaltati dalla semplicità del burro fuso e della salvia.", "tags": ["Pasta Ripiena", "Vegetariano"] },
+    "pas-10": { "name": "Lasagne della casa", "desc": "Fatte al forno con zucchine trombette liguri e pesto genovese.", "tags": [] },
+    "pas-11": { "name": "Risotto con trombette e cuore di Bue", "desc": "Risotto mantecato con zucchine, pomodoro cuore di bue, cipolla e basilico.", "tags": ["Vegetariano"] },
+    "pas-12": { "name": "Fregola di Mare", "desc": "Fregola sarda risottata con scampi, cozze, calamari, vongole e merluzzo.", "tags": [] },
+    "pas-13": { "name": "Paëlla alla Valenciana", "desc": "Il classico piatto spagnolo ricco di sapore, con carne, pesce e zafferano.", "tags": [] },
+
+    "mar-1": { "name": "Tartare di Tonno (Secondo)", "desc": "Abbondante battuta di tonno fresco al coltello, condita con olio EVO e agrumi.", "tags": ["Crudo"] },
+    "mar-2": { "name": "Seppie in Zemin", "desc": "Storica e saporita zuppa ligure a base di seppie, bietole e pinoli.", "tags": ["Tradizione Ligure"] },
+    "mar-3": { "name": "Zuppetta di Pesce", "desc": "Ricca e profumata zuppa con il pescato del giorno, servita con crostini caldi.", "tags": [] },
+    "mar-4": { "name": "Frittura di Acciughe e Gamberetti", "desc": "Frittura croccante, asciutta e dorata mista di mare.", "tags": [] },
+    "mar-5": { "name": "Brandacujun", "desc": "Piatto forte del Ponente: stoccafisso mantecato con patate, aglio, olive e prezzemolo.", "tags": ["Tradizione Ligure"] },
+    "mar-6": { "name": "Orata alla Ligure", "desc": "Filetto d'orata cotto al forno con patate, olive taggiasche e pinoli.", "tags": [] },
+    "mar-7": { "name": "Sautè di Cozze", "desc": "Cozze saltate in padella con aglio, prezzemolo, vino bianco e pomodoro.", "tags": [] },
+
+    "sec-1": { "name": "Anatra all'arancia", "desc": "Grande classico francese: petto d'anatra servito con salsa agrodolce all'arancia.", "tags": ["Classico Francese"] },
+    "sec-2": { "name": "Filetto al pepe Verde", "desc": "Tenero filetto di manzo servito con la classica crema al pepe verde in grani.", "tags": [] },
+    "sec-3": { "name": "Escargots de Bourgogne", "desc": "Lumache alla borgognona gratinate nel guscio con burro, aglio e prezzemolo.", "tags": ["Classico Francese"] },
+    "sec-4": { "name": "Tajin di Pollo con le Sue Spezie", "desc": "Pollo stufato lentamente con aromi orientali, servito nel tradizionale tegame.", "tags": [] },
+    "sec-5": { "name": "Tartare di Fassona con Spiedino di Zucchine", "desc": "Carne cruda di altissima qualità, tagliata a mano, accompagnata da verdure.", "tags": [] },
+    "sec-6": { "name": "Lumache alla ligure", "desc": "Lumache stufate secondo la tradizione con erbe aromatiche e pomodoro.", "tags": ["Tradizione Ligure"] },
+
+    "dol-1": { "name": "Tiramisù della Casa", "desc": "Il nostro classico tiramisù artigianale, preparato con savoiardi inzuppati nel caffè espresso e una soffice e golosa crema al mascarpone.", "tags": ["Fatto in casa"] },
+    "dol-2": { "name": "Torta di Sandra", "desc": "Un dolce omaggio alla nostra storica cuoca: una deliziosa e avvolgente torta di crema cotta, dalla consistenza morbida e dal sapore genuino di una volta.", "tags": ["Fatto in casa"] },
+    "dol-3": { "name": "Panna Cotta alla Vaniglia", "desc": "Panna cotta con bacche di vaniglia del Madagascar, coulis di frutti di bosco freschi.", "tags": ["Classico"] },
+    "dol-4": { "name": "Tarte Tatin", "desc": "Tarte tatin di mele renette, caramello scuro, gelato alla vaniglia fatto in casa.", "tags": ["Classico francese"] },
+    "dol-5": { "name": "Sorbetto del Giorno", "desc": "Sorbetto alla frutta di stagione. Chiedi al cameriere la proposta del giorno.", "tags": ["Stagionale", "Vegano"] }
+  },
+"tripadvisorSection": {
+    "eyebrow": "Tripadvisor",
+    "title": "Le parole dei nostri ospiti",
+    "reviews": [
+      {
+        "quote": "«Cena con amici in un ambiente raffinato ed elegante. L'accoglienza è calorosa, il servizio impeccabile e nei tempi giusti. Il menù è molto attraente e vario: strizza l'occhio alla cucina francese, ma esalta anche i prodotti del territorio. Abbiamo gustato piatti curati e deliziosi con un ottimo rapporto qualità-prezzo. Consiglio vivamente questo splendido locale.»"
+      },
+      {
+        "quote": "«Locale estremamente affascinante con un servizio affabile ed efficiente. Menù variegato con una cantina all'altezza della situazione. Pesce freschissimo e piatti accattivanti abilmente serviti. Settore dei dessert completo con presentazione impeccabile. Bravissimi, torneremo presto!»"
+      },
+      {
+        "quote": "«Location molto elegante, perfetta sia per una cena di coppia che per una cena con gli amici. Personale davvero gentile e preparato. Piatti belli alla vista e davvero eccellenti al gusto. È stato un piacere mangiarci e per questo ci tornerò sicuramente.»"
+      }
+    ]
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Home",
+      "about": "About us",
+      "menu": "Menu",
+      "wines": "Wine List",
+      "contact": "Contact"
+    },
+    "book": "Book",
+    "bookTable": "Book a Table",
+    "tagline": "Where time slows down and every dinner becomes a memory."
+  },
+  "hero": {
+    "location": "Imperia · Liguria · Since 2017",
+    "title": "Il Bistrot",
+    "subtitle": "del Tempo Perduto",
+    "description": "Where time slows down and every dinner becomes a memory. Timeless cuisine between Liguria and France.",
+    "bookBtn": "Book a Table",
+    "menuBtn": "Explore the Menu",
+    "scroll": "Discover"
+  },
+  "aboutPreview": {
+    "label": "Our Home",
+    "title": "A place where time",
+    "titleItalic": "stands still at the table",
+    "description": "For over nine years, in the heart of Imperia, we have cherished a simple idea: that a dinner is not just a meal, but an experience to remember. Inspired by French bistros and rooted in Ligurian tradition.",
+    "button": "Discover our story"
+  },
+  "atmosphere": {
+    "alt": "Bistro atmosphere",
+    "quote": "«Entering here is like crossing the threshold of another era. Time dissolves, only pleasure remains.»",
+    "signature": "— Imperia, Liguria"
+  },
+  "ctaReservation": {
+    "alt": "Table set for dinner",
+    "subheading": "Book your evening",
+    "heading": "Reserve a table",
+    "headingItalic": "and let time stand still",
+    "bookBtn": "Book a Table",
+    "contactBtn": "Contact us"
+  },
+  "signatureDishes": {
+    "label": "The Dishes",
+    "title": "The flavors that tell",
+    "titleItalic": "the story of our cuisine",
+    "description": "A selection of dishes combining Ligurian tradition with French elegance. Seasonal ingredients, handmade.",
+    "menuBtn": "See the Full Menu",
+    "items": {
+      "escargots": {
+        "name": "Escargots de Bourgogne",
+        "description": "Burgundy snails gratinated in the shell with butter, garlic, and parsley.",
+        "tag": "From the Sea"
+      },
+      "baccala": {
+        "name": "Baccalà Mantecato",
+        "description": "Artfully prepared salted cod with a drizzle of olive oil, served with a crispy crouton.",
+        "tag": "Fresh Pasta"
+      },
+      "gamberi": {
+        "name": "Fresh Raw Prawns",
+        "description": "Extremely fresh prawns served au naturel on a bed of crushed ice, to enhance their purity and natural sweetness.",
+        "tag": "From the Sea"
+      },
+      "cozze": {
+        "name": "Mussel Sautè",
+        "description": "Mussels sautéed in a pan with garlic, parsley, white wine, and cherry tomatoes, served with a golden crouton and lemon.",
+        "tag": "Dessert"
+      }
+    }
+  },
+  "winePreview": {
+    "altMain": "The wine cellar",
+    "altSecondary": "Selected wine bottle",
+    "label": "The Cellar",
+    "title": "A cellar with",
+    "titleItalic": "over fifty labels",
+    "description1": "Our cellar features over fifty labels, with a selection dedicated to Ligurian vines, great Italian reds, and French classics. Every dish finds its perfect match.",
+    "description2": "Our staff is available to guide you through a tasting journey, from the opening bubbles to the sweet finale.",
+    "button": "Explore the Cellar"
+  },
+  "footer": {
+    "description": "A corner of France in the heart of Liguria, where time stands still and flavor remains.",
+    "explore": "Explore",
+    "reservations": "Reservations",
+    "hours": "Hours",
+    "contacts": "Contacts",
+    "rights": "All rights reserved.",
+    "location": "Imperia · Liguria · Italy"
+  },
+  "openingHours": [
+    { "days": "Monday", "time": "Closed" },
+    { "days": "Tuesday and Thursday", "time": "19:00 — 22:00" },
+    { "days": "Wednesday", "time": "12:00 — 14:30 · 19:00 — 22:00" },
+    { "days": "Friday — Sunday", "time": "12:00 — 14:30 · 19:00 — 22:00" }
+  ],
+  "aboutPage": {
+    "heroEyebrow": "Our Home",
+    "heroTitle": "A story of time and flavors",
+    "originsLabel": "The Origins",
+    "originsTitle1": "Born in 2017 from an idea",
+    "originsTitle2": "of time and patience",
+    "originsP1_1": "Once upon a time there was ",
+    "originsP1_2": "\"Il Bistrot del Tempo Perduto\"",
+    "originsP1_3": ", a delightful corner of paradise made of candles, soft lights, scents, and objects breathing the air of a bygone era. ",
+    "originsP1_4": "Today it is time to change",
+    "originsP1_5": ", not in essence, but in location. After a challenging and tiring journey, we have finally reached the finish line: we welcome you to a ",
+    "originsP1_6": "new space where furnishings and colors radiate beauty",
+    "originsP1_7": " and refined details, without ever leaving our flavors behind.",
+    "originsP2_1": "Our cuisine is based on the ",
+    "originsP2_2": "recipe books of chef Sandra",
+    "originsP2_3": ". Our dishes are made of ",
+    "originsP2_4": "memories and traditions",
+    "originsP2_5": ", like fresh pasta and Ligurian stockfish. Here you can find the authentic ",
+    "originsP2_6": "\"Sunday dish\"",
+    "originsP2_7": ", the one that brings back memories of warm family lunches, ending sweetly with the ",
+    "originsP2_8": "most classic desserts",
+    "originsP2_9": ", simply those of a mother.",
+    "originsP3_1": "Outside, everything is ",
+    "originsP3_2": "rush and frenzy",
+    "originsP3_3": ", but not in the Bistrot. The name \"Tempo Perduto\" (Lost Time) continues to be a ",
+    "originsP3_4": "tribute to the evenings that seem to never end",
+    "originsP3_5": " and to the wines that are worth the wait. Here it is as if ",
+    "originsP3_6": "time stood still",
+    "originsP3_7": ", turning the wait into wonder. The spirit is the same as always: great attention to detail, the taste of memories, and ",
+    "originsP3_8": "no rush",
+    "originsP3_9": ". And our story continues with great news... see you soon.",
+    "philosophyLabel": "Our Philosophy",
+    "philosophyQuote": "«We don't just serve food. We serve the luxury of fleeting time, transformed into memory.»",
+    "inspirationLabel": "The Inspiration",
+    "inspirationTitle1": "Between Liguria",
+    "inspirationTitle2": "and Provence",
+    "inspirationP1": "Our cuisine is born from the encounter between two similar traditions: the Liguria of pestos and bluefish, and the France of mother sauces and slow cooking.",
+    "inspirationP2": "Years spent in Liguria have taught us respect for time: the time of a stock reducing, of a braised meat cooking for six hours, of our focaccia rising.",
+    "seasonLabel": "Seasonal Cuisine",
+    "seasonTitle1": "The menu follows",
+    "seasonTitle2": "the market and the garden",
+    "seasonP1": "Our menu changes with the seasons and the catch of the day. We work with small producers from the Ligurian hinterland and fishermen from the Imperia market, choosing only the best.",
+    "seasonP2": "Ligurian tradition — pesto, pansoti, bluefish — meets French technique: mother sauces, slow cooking, classic pastry. A dialogue between two cuisines that resemble each other for their love of time and ingredients.",
+    "statsLabel1": "Years of cooking",
+    "statsLabel2": "Fresh catch",
+    "statsValue2": "Every day",
+    "statsLabel3": "Fresh pasta",
+    "statsValue3": "Handmade",
+    "seasonQuote": "«Time is the ingredient you cannot buy.»",
+    "hospitalityLabel": "Hospitality",
+    "hospitalityQuote": "«We welcome every guest as you welcome a longtime friend: with time, with care, with the desire to make them feel at home.»",
+    "hospitalitySub": "Our team — dining room and kitchen",
+    "pillarsLabel": "The Three Pillars",
+    "pillarsTitle": "Kitchen, Cellar, Atmosphere",
+    "kitchenTitle": "Kitchen",
+    "kitchenText": "Excellent raw materials, classic technique, strict seasonality. No compromises on the ingredient.",
+    "cellarTitle": "Cellar",
+    "cellarText": "A curated selection of wines. Our staff will advise you on the perfect pairing for your dishes.",
+    "atmosphereTitle": "Atmosphere",
+    "atmosphereText": "Dim lights, great care. Distant tables, soft music, candles lit every evening like a ritual.",
+    "ctaTitle1": "Come and discover",
+    "ctaTitle2": "lost time",
+    "ctaBtnBook": "Book a Table",
+    "ctaBtnMenu": "See the Menu"
+  },
+  "contactPage": {
+    "heroEyebrow": "Contact",
+    "heroTitle": "Come visit us",
+    "heroDescription": "We are in the heart of Imperia, a few steps from the port. For any request — reservations, private events, business dinners — we are at your disposal.",
+    "whereLabel": "Where We Are",
+    "restaurantName": "Il Bistrot del Tempo Perduto",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Hours",
+    "bookBtn": "Book a Table",
+    "mapTitle": "Restaurant map",
+    "directionsBtn": "Directions",
+    "openMapBtn": "Open in map",
+    "socialTitle": "Follow our channels"
+  },
+  "menuPage": {
+    "heroEyebrow": "The Menu",
+    "heroTitle": "The menu changes with the seasons",
+    "heroDescription": "A cuisine that follows the market, the sea, and the garden. These are the dishes on our menu — a selection that renews every season.",
+    "noteLabel": "Note",
+    "noteText": "«The menu may vary depending on market availability and the season. In the absence of fresh product, frozen product may be used. For allergies and intolerances, please speak with our staff.»",
+    "bookBtn": "Book a Table"
+  },
+  "notFoundPage": {
+    "eyebrow": "404 — Page not found",
+    "title1": "This page",
+    "titleItalic": "has been lost in time",
+    "description": "The page you were looking for doesn't exist or has been moved. Return to discover our cuisine and our story.",
+    "homeBtn": "Back to Home",
+    "bookBtn": "Book a Table"
+  },
+  "reservationsPage": {
+    "heroEyebrow": "Reservations",
+    "heroTitle": "Reserve your table",
+    "heroDescription": "Contact us directly to reserve your table.",
+    "howToLabel": "How to Book",
+    "title": "Book Directly",
+    "callLabel": "Call us",
+    "whatsappLabel": "Write to us on WhatsApp",
+    "emailLabel": "Send an Email / PEC",
+    "hoursLabel": "Opening Hours",
+    "contactsLabel": "Direct Contacts",
+    "quote": "«Lost time is the most beautiful time.»"
+  },
+  "winePage": {
+    "heroEyebrow": "The Cellar",
+    "heroTitle": "A history of over 50 labels",
+    "heroDescription": "A cellar built over nine years of research. Ligurian vines, great Italians, French classics, and bubbles for every occasion. Below we offer a few examples from our cellar.",
+    "featuredBadge": "Featured",
+    "tastingNotesLabel": "Tasting notes",
+    "pairingLabel": "Pairing: ",
+    "sommelierEyebrow": "The Sommelier",
+    "sommelierQuote": "«Every bottle tells a story of its land. Let us guide you through a tailored journey, from aperitif to dessert.»",
+    "bookBtn": "Book a Table"
+  },
+  "menuCategories": {
+    "antipasti": {
+      "label": "Starters",
+      "subtitle": "The Beginnings",
+      "description": "Flavors to open the evening — raw seafood, garden vegetables, and great classics."
+    },
+    "mare": {
+      "label": "From the Sea",
+      "subtitle": "The Catch of the Day",
+      "description": "A different selection every day, chosen at the morning market. Fish arrives whole and is hand-prepared."
+    },
+    "pasta": {
+      "label": "Fresh Pasta",
+      "subtitle": "Handmade Every Morning",
+      "description": "Fresh pasta is the heart of Ligurian cuisine. Rolled with a rolling pin, carefully stuffed, cooked to order."
+    },
+    "secondi": {
+      "label": "Main Courses",
+      "subtitle": "Land and Fire",
+      "description": "Selected meats, slow cooking, and perfectly reduced sauces. The soul of our cuisine."
+    },
+    "dolci": {
+      "label": "Desserts",
+      "subtitle": "The Finale",
+      "description": "Classic desserts revisited with lightness. Sugar never masks the flavor of the main ingredient."
+    }
+  },
+  "menuItems": {
+    "ant-1": { "name": "6 Breton Oysters (N° 2 Concave)", "desc": "Fine Breton oysters served very fresh au naturel.", "tags": ["Raw", "Sea"] },
+    "ant-2": { "name": "Mixed Plateau", "desc": "Special selection consisting of 3 oysters and 3 prawns.", "tags": ["Raw"] },
+    "ant-3": { "name": "Crevettes à l'aïoli", "desc": "Prawns served with traditional and creamy French aïoli sauce.", "tags": [] },
+    "ant-4": { "name": "Catalan-style Prawns", "desc": "Fresh prawns with cherry tomatoes, sweet red onion, and vinaigrette.", "tags": [] },
+    "ant-5": { "name": "Mantecato Cod", "desc": "Artfully prepared salted cod with olive oil, served with croutons.", "tags": ["Tradition"] },
+    "ant-6": { "name": "Tuna Tartare", "desc": "Hand-cut raw tuna tartare in an appetizer portion.", "tags": [] },
+    "ant-7": { "name": "Carrot Soufflé", "desc": "Soft carrot soufflé accompanied by a rich gorgonzola fondue.", "tags": ["Vegetarian"] },
+    "ant-8": { "name": "Trumpet Zucchini Soufflé", "desc": "Ligurian trumpet zucchini soufflé with fresh tomato sauce.", "tags": ["Vegetarian"] },
+    "ant-9": { "name": "Savory Panna Cotta", "desc": "A delightful and delicate savory twist to open the appetite.", "tags": [] },
+    "ant-10": { "name": "Stuffed Vegetables", "desc": "Classic Ligurian tradition vegetables, lean-stuffed and oven-baked.", "tags": ["Ligurian Tradition", "Vegetarian"] },
+    "ant-11": { "name": "Eggplant Parmigiana", "desc": "Eggplant parmigiana with tomato, basil, and melted cheese.", "tags": ["Vegetarian"] },
+    "ant-12": { "name": "Seafood Panzanella", "desc": "Simple rustic bread salad enriched with fresh seafood.", "tags": [] },
+    "ant-13": { "name": "\"Condiglione\" Salad", "desc": "Traditional fresh and rich summer salad from western Liguria.", "tags": ["Vegetarian"] },
+    "ant-14": { "name": "Vitello Tonnato", "desc": "Low-temperature cooked round of veal with smooth tuna sauce.", "tags": [] },
+
+    "pas-1": { "name": "Green Tagliolini with Fish Ragoût", "desc": "Fresh spinach pasta tossed with a rich catch-of-the-day ragoût.", "tags": ["Fresh Pasta"] },
+    "pas-2": { "name": "Pansoti with Prawns and Cherry Tomatoes", "desc": "Typical Ligurian pansoti tossed with prawns, fresh cherry tomatoes, and a touch of crunchy vegetables.", "tags": ["Fresh Pasta"] },
+    "pas-3": { "name": "Gnocchi with Octopus and Datterini Tomatoes", "desc": "Homemade gnocchi with true octopus and yellow/red datterini tomatoes.", "tags": [] },
+    "pas-4": { "name": "Gnocchi with Mussels and Figs", "desc": "A bold and successful pairing between the savoriness of mussels and the sweetness of figs.", "tags": [] },
+    "pas-5": { "name": "Pappardelle with Anchovies", "desc": "Pappardelle tossed with anchovies, crunchy almonds, and pine nuts.", "tags": [] },
+    "pas-6": { "name": "Green Tagliatelle with Duck Ragoût", "desc": "Green egg pasta with knife-cut duck ragoût.", "tags": [] },
+    "pas-7": { "name": "Green Tagliatelle, Zucchini, Prawns, and Bottarga", "desc": "A triumph of flavors with fresh zucchini, prawns, and a dusting of bottarga.", "tags": [] },
+    "pas-8": { "name": "Green Raviolini with Beef Ragoût", "desc": "Meat-stuffed green ravioli served with slow-cooked beef ragoût.", "tags": ["Stuffed Pasta"] },
+    "pas-9": { "name": "Green Ravioli with Butter and Sage", "desc": "Delicate ravioli enhanced by the simplicity of melted butter and sage.", "tags": ["Stuffed Pasta", "Vegetarian"] },
+    "pas-10": { "name": "House Lasagna", "desc": "Baked with Ligurian trumpet zucchini and Genoese pesto.", "tags": [] },
+    "pas-11": { "name": "Risotto with Trumpet Zucchini and Oxheart Tomato", "desc": "Risotto creamed with zucchini, oxheart tomato, onion, and basil.", "tags": ["Vegetarian"] },
+    "pas-12": { "name": "Seafood Fregola", "desc": "Sardinian fregola cooked like risotto with scampi, mussels, squid, clams, and hake.", "tags": [] },
+    "pas-13": { "name": "Valencian Paëlla", "desc": "The classic flavor-rich Spanish dish with meat, fish, and saffron.", "tags": [] },
+
+    "mar-1": { "name": "Tuna Tartare (Main Course)", "desc": "Generous hand-cut fresh tuna tartare, dressed with extra virgin olive oil and citrus.", "tags": ["Raw"] },
+    "mar-2": { "name": "Cuttlefish in Zemin", "desc": "Historic and savory Ligurian soup made with cuttlefish, Swiss chard, and pine nuts.", "tags": ["Ligurian Tradition"] },
+    "mar-3": { "name": "Fish Soup", "desc": "Rich and fragrant soup with the catch of the day, served with warm croutons.", "tags": [] },
+    "mar-4": { "name": "Fried Anchovies and Small Prawns", "desc": "Crispy, dry, and golden mixed seafood fry.", "tags": [] },
+    "mar-5": { "name": "Brandacujun", "desc": "Western Liguria powerhouse: salt cod creamed with potatoes, garlic, olives, and parsley.", "tags": ["Ligurian Tradition"] },
+    "mar-6": { "name": "Ligurian-style Sea Bream", "desc": "Oven-baked sea bream fillet with potatoes, Taggiasca olives, and pine nuts.", "tags": [] },
+    "mar-7": { "name": "Mussel Sauté", "desc": "Pan-sautéed mussels with garlic, parsley, white wine, and tomato.", "tags": [] },
+
+    "sec-1": { "name": "Duck à l'Orange", "desc": "Great French classic: duck breast served with sweet and sour orange sauce.", "tags": ["French Classic"] },
+    "sec-2": { "name": "Green Peppercorn Filet", "desc": "Tender beef tenderloin served with classic green peppercorn cream sauce.", "tags": [] },
+    "sec-3": { "name": "Escargots de Bourgogne", "desc": "Burgundy snails gratinated in the shell with butter, garlic, and parsley.", "tags": ["French Classic"] },
+    "sec-4": { "name": "Chicken Tagine with Spices", "desc": "Chicken slowly stewed with oriental aromas, served in the traditional tagine.", "tags": [] },
+    "sec-5": { "name": "Fassona Tartare with Zucchini Skewer", "desc": "Highest quality raw meat, hand-cut, accompanied by vegetables.", "tags": [] },
+    "sec-6": { "name": "Ligurian-style Snails", "desc": "Snails traditionally stewed with aromatic herbs and tomato.", "tags": ["Ligurian Tradition"] },
+
+    "dol-1": { "name": "House Tiramisù", "desc": "Our classic homemade tiramisù, prepared with ladyfingers dipped in espresso and a soft, delicious mascarpone cream.", "tags": ["Homemade"] },
+    "dol-2": { "name": "Sandra's Cake", "desc": "A delicious tribute to our historic cook: a soft baked custard cake with the genuine flavor of the old days.", "tags": ["Homemade"] },
+    "dol-3": { "name": "Vanilla Panna Cotta", "desc": "Panna cotta with Madagascar vanilla beans, fresh wild berry coulis.", "tags": ["Classic"] },
+    "dol-4": { "name": "Tarte Tatin", "desc": "Renette apple tarte tatin, dark caramel, homemade vanilla ice cream.", "tags": ["French Classic"] },
+    "dol-5": { "name": "Sorbet of the Day", "desc": "Seasonal fruit sorbet. Ask the waiter for today's proposal.", "tags": ["Seasonal", "Vegan"] }
+  },
+"tripadvisorSection": {
+    "eyebrow": "Tripadvisor",
+    "title": "Words from our guests",
+    "reviews": [
+      {
+        "quote": "«Dinner with friends in a refined and elegant atmosphere. The welcome is warm, the service impeccable and timely. The menu is very appealing and varied: it nods to French cuisine while also highlighting local products. We enjoyed well-crafted and delicious dishes with great value for money. I highly recommend this wonderful place.»"
+      },
+      {
+        "quote": "«Extremely charming venue with friendly and efficient service. Varied menu with a cellar to match. Extremely fresh fish and appealing dishes skillfully served. Complete dessert section with flawless presentation. Wonderful job, we will be back soon!»"
+      },
+      {
+        "quote": "«Very elegant location, perfect both for a couple's dinner and a dinner with friends. Truly kind and knowledgeable staff. Dishes that are beautiful to look at and truly excellent to taste. It was a pleasure dining here and I will definitely return.»"
+      }
+    ]
+  }
+}

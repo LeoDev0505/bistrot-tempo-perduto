@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { ButtonLink } from '@/components/ui/Button';
 import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export default function NotFoundPage() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -22,7 +25,7 @@ export default function NotFoundPage() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="text-xs uppercase tracking-[0.4em] text-amber-gold/90 mb-6"
         >
-          404 — Pagina non trovata
+          {t('notFoundPage.eyebrow')}
         </motion.p>
 
         <motion.h1
@@ -31,9 +34,9 @@ export default function NotFoundPage() {
           transition={{ duration: 1.1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-cream leading-[1] text-shadow-strong"
         >
-          Questa pagina
+          {t('notFoundPage.title1')}
           <span className="block italic text-amber-light/90 mt-2">
-            si è perduta nel tempo
+            {t('notFoundPage.titleItalic')}
           </span>
         </motion.h1>
 
@@ -43,8 +46,7 @@ export default function NotFoundPage() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 text-cream/60 leading-relaxed max-w-md mx-auto"
         >
-          La pagina che cercavi non esiste o è stata spostata. Torna a scoprire
-          la nostra cucina e la nostra storia.
+          {t('notFoundPage.description')}
         </motion.p>
 
         <motion.div
@@ -54,10 +56,10 @@ export default function NotFoundPage() {
           className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5"
         >
           <ButtonLink to="/" variant="solid" withArrow>
-            Torna alla Home
+            {t('notFoundPage.homeBtn')}
           </ButtonLink>
           <ButtonLink to="/reservations" variant="outline">
-            Prenota un Tavolo
+            {t('notFoundPage.bookBtn')}
           </ButtonLink>
         </motion.div>
       </div>

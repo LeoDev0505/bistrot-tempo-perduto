@@ -9,28 +9,42 @@ import { SmartImage } from '@/components/ui/SmartImage';
 import { MENU_CATEGORIES, MENU_ITEMS } from '@/data/menu';
 import type { MenuItem, MenuItemCategory } from '@/data/menu';
 import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export default function MenuPage() {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language.startsWith('fr') ? 'fr' : i18n.language.startsWith('en') ? 'en' : 'it';
+  
   const [active, setActive] = useState<MenuItemCategory>('antipasti');
-  const activeCategory = MENU_CATEGORIES.find((c) => c.id === active)!;
+  const baseCategory = MENU_CATEGORIES.find((c) => c.id === active)!;
+  
+  const activeCategory = {
+    ...baseCategory,
+    label: baseCategory.label[lang as 'it' | 'en' | 'fr'],
+    subtitle: baseCategory.subtitle[lang as 'it' | 'en' | 'fr'],
+    description: baseCategory.description[lang as 'it' | 'en' | 'fr'],
+  };
+
   const items = MENU_ITEMS.filter((i) => i.category === active);
 
   return (
     <>
       <PageHero
-        eyebrow="Il Menù"
-        title="Il menù cambia con le stagioni"
+        eyebrow={t('menuPage.heroEyebrow')}
+        title={t('menuPage.heroTitle')}
         image={IMAGE.dishSeafood}
         isCompact={true}
       >
         <p className="mt-6 max-w-xl text-cream/60 leading-relaxed">
-          Una cucina che segue il mercato, il mare e l’orto. Questi sono i
-          piatti della nostra carta — una selezione che si rinnova ogni stagione.
+          {t('menuPage.heroDescription')}
         </p>
       </PageHero>
 
       <CategoryNav
-        categories={MENU_CATEGORIES}
+        categories={MENU_CATEGORIES.map((c) => ({
+          ...c,
+          label: c.label[lang as 'it' | 'en' | 'fr'],
+        }))}
         active={active}
         onChange={setActive}
       />
@@ -72,7 +86,7 @@ export default function MenuPage() {
 
               <div className="divide-y divide-cream/10 border-t border-cream/10">
                 {items.map((item) => (
-                  <MenuRow key={item.id} item={item} />
+                  <MenuRow key={item.id} item={item} lang={lang} />
                 ))}
               </div>
             </motion.div>
@@ -93,18 +107,16 @@ export default function MenuPage() {
         <div className="relative z-10 mx-auto max-w-3xl text-center px-6">
           <Reveal>
             <p className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-6">
-              Nota
+              {t('menuPage.noteLabel')}
             </p>
-            {/* HO AGGIUNTO QUI LA NOTA SUL PRODOTTO GELO */}
             <p className="font-serif text-2xl md:text-3xl text-cream italic leading-[1.3] text-balance">
-              «Il menù può variare secondo la disponibilità del mercato e
-              della stagione. In mancanza di prodotto fresco, si potrebbe utilizzare prodotto gelo. Per allergie e intolleranze, parla con il nostro staff.»
+              {t('menuPage.noteText')}
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="mt-12">
               <ButtonLink to="/reservations" variant="solid" withArrow>
-                Prenota un Tavolo
+                {t('menuPage.bookBtn')}
               </ButtonLink>
             </div>
           </Reveal>
@@ -114,18 +126,18 @@ export default function MenuPage() {
   );
 }
 
-/** MenuRow con l'aggiunta del prezzo allineato a destra */
-function MenuRow({ item }: { item: MenuItem }) {
+function MenuRow({ item, lang }: { item: MenuItem; lang: string }) {
+  const name = item.name[lang as 'it' | 'en' | 'fr'] || item.name.it;
+  const description = item.description[lang as 'it' | 'en' | 'fr'] || item.description.it;
+  const tags = item.tags ? (item.tags[lang as 'it' | 'en' | 'fr'] || item.tags.it) : [];
+
   return (
     <article className="group py-8 md:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
       <div className="md:col-span-9">
-        
-        {/* QUI HO INSERITO IL FLEXBOX PER AFFIANCARE NOME E PREZZO */}
         <div className="flex justify-between items-baseline gap-4">
           <h3 className="font-serif text-2xl md:text-3xl text-cream group-hover:text-amber-gold transition-colors duration-500">
-            {item.name}
+            {name}
           </h3>
-          {/* Rendering del prezzo con font-serif e colore oro */}
           {item.price && (
             <span className="font-serif text-xl md:text-2xl text-amber-gold shrink-0">
               {item.price}
@@ -134,12 +146,12 @@ function MenuRow({ item }: { item: MenuItem }) {
         </div>
 
         <p className="mt-3 text-cream/55 leading-relaxed max-w-2xl">
-          {item.description}
+          {description}
         </p>
         
-        {item.tags && item.tags.length > 0 && (
+        {tags && tags.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
-            {item.tags.map((tag) => (
+            {tags.map((tag: string) => (
               <span
                 key={tag}
                 className="text-[0.65rem] uppercase tracking-[0.2em] text-amber-gold/70 border border-amber-gold/30 px-2.5 py-1"

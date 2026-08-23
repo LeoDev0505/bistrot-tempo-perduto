@@ -4,8 +4,11 @@ import { Reveal } from '@/components/ui/Reveal';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export function WinePreview() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative py-24 md:py-40 bg-espresso-950 grain-overlay">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
@@ -17,7 +20,7 @@ export function WinePreview() {
                 <div className="aspect-[4/3] md:aspect-[16/11] overflow-hidden">
                   <SmartImage
                     src={IMAGE.wineCellar}
-                    alt="La cantina dei vini"
+                    alt={t('winePreview.altMain')}
                     className="h-full w-full object-cover transition-transform duration-[1.5s] hover:scale-105"
                   />
                 </div>
@@ -31,7 +34,7 @@ export function WinePreview() {
               >
                 <SmartImage
                   src="images/redwine.jpg"
-                  alt="Bottiglia di vino selezionata"
+                  alt={t('winePreview.altSecondary')}
                   className="h-full w-full object-cover"
                 />
               </motion.div>
@@ -40,32 +43,29 @@ export function WinePreview() {
 
           {/* Text */}
           <div className="lg:col-span-5">
-            <SectionLabel label="La Cantina" />
+            <SectionLabel label={t('winePreview.label')} />
             <Reveal delay={0.1}>
               <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                Una cantina da
+                {t('winePreview.title')}
                 <span className="block italic text-amber-light/90">
-                  oltre cinquanta etichette
+                  {t('winePreview.titleItalic')}
                 </span>
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-8 text-cream/60 leading-relaxed text-lg">
-                La nostra cantina raccoglie oltre cinquanta etichette, con una
-                selezione dedicata ai vitigni liguri, ai grandi rossi italiani
-                e ai classici francesi. Ogni piatto trova il suo abbinamento.
+                {t('winePreview.description1')}
               </p>
             </Reveal>
             <Reveal delay={0.3}>
               <p className="mt-6 text-cream/50 leading-relaxed">
-                Il nostro personale è a disposizione per guidarti in un percorso
-                di degustazione, dalla bollicina d’apertura al dolce finale.
+                {t('winePreview.description2')}
               </p>
             </Reveal>
             <Reveal delay={0.4}>
               <div className="mt-10">
                 <ButtonLink to="/wine" variant="ghost" withArrow className="text-amber-gold">
-                  Esplora la Cantina
+                  {t('winePreview.button')}
                 </ButtonLink>
               </div>
             </Reveal>

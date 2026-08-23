@@ -1,0 +1,311 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Accueil",
+      "about": "Notre Histoire",
+      "menu": "Menu",
+      "wines": "Cave à Vin",
+      "contact": "Contact"
+    },
+    "book": "Réserver",
+    "bookTable": "Réserver une Table",
+    "tagline": "Où le temps ralentit et chaque dîner devient un souvenir."
+  },
+  "hero": {
+    "location": "Imperia · Liguria · Depuis 2017",
+    "title": "Il Bistrot",
+    "subtitle": "del Tempo Perduto",
+    "description": "Où le temps ralentit et chaque dîner devient un souvenir. Une cuisine intemporelle entre la Ligurie et la France.",
+    "bookBtn": "Réserver une Table",
+    "menuBtn": "Découvrir le Menu",
+    "scroll": "Découvrir"
+  },
+  "aboutPreview": {
+    "label": "Notre Maison",
+    "title": "Un lieu où le temps",
+    "titleItalic": "s'arrête à table",
+    "description": "Depuis plus de neuf ans, au cœur d'Imperia, nous chérissons une idée simple : qu'un dîner n'est pas seulement un repas, mais une expérience inoubliable. Inspirée des bistrots français et ancrée dans la tradition ligure.",
+    "button": "Découvrez notre histoire"
+  },
+  "atmosphere": {
+    "alt": "Atmosphère du bistrot",
+    "quote": "«Entrer ici, c'est comme franchir le seuil d'une autre époque. Le temps se dissipe, seul reste le plaisir.»",
+    "signature": "— Imperia, Liguria"
+  },
+  "ctaReservation": {
+    "alt": "Table dressée pour le dîner",
+    "subheading": "Réservez votre soirée",
+    "heading": "Réservez une table",
+    "headingItalic": "et laissez le temps s'arrêter",
+    "bookBtn": "Réserver une Table",
+    "contactBtn": "Nous Contacter"
+  },
+  "signatureDishes": {
+    "label": "Les Plats",
+    "title": "Les saveurs qui racontent",
+    "titleItalic": "notre cuisine",
+    "description": "Une sélection de plats alliant la tradition ligure à l'élégance française. Ingrédients de saison, faits main.",
+    "menuBtn": "Voir le Menu Complet",
+    "items": {
+      "escargots": {
+        "name": "Escargots de Bourgogne",
+        "description": "Escargots de Bourgogne gratinés en coquille avec beurre, ail et persil.",
+        "tag": "De la Mer"
+      },
+      "baccala": {
+        "name": "Brandade de Morue",
+        "description": "Morue travaillée avec art avec un filet d'huile d'olive, servie avec un croûton croustillant.",
+        "tag": "Pâtes Fraîches"
+      },
+      "gamberi": {
+        "name": "Cru de Crevettes Fraîches",
+        "description": "Crevettes très fraîches servies au naturel sur un lit de glace pilée, pour rehausser leur pureté et douceur naturelle.",
+        "tag": "De la Mer"
+      },
+      "cozze": {
+        "name": "Sauté de Moules",
+        "description": "Moules sautées à la poêle avec ail, persil, vin blanc et tomates cerises, servies avec un croûton doré et du citron.",
+        "tag": "Dessert"
+      }
+    }
+  },
+  "winePreview": {
+    "altMain": "La cantina des vins",
+    "altSecondary": "Bouteille de vin sélectionnée",
+    "label": "La Cave",
+    "title": "Une cave de",
+    "titleItalic": "plus de cinquante étiquettes",
+    "description1": "Notre cave réunit plus de cinquante étiquettes, avec une sélection dédiée aux cépages ligures, aux grands rouges italiens et aux classiques français. Chaque plat trouve son accord.",
+    "description2": "Notre personnel est à votre disposition pour vous guider dans un parcours de dégustation, des bulles d'ouverture au dessert final.",
+    "button": "Explorer la Cave"
+  },
+  "footer": {
+    "description": "Un coin de France au cœur de la Ligurie, où le temps s'arrête et la saveur reste.",
+    "explore": "Explorer",
+    "reservations": "Réservations",
+    "hours": "Horaires",
+    "contacts": "Contacts",
+    "rights": "Tous droits réservés.",
+    "location": "Imperia · Liguria · Italie"
+  },
+  "openingHours": [
+    { "days": "Lundi", "time": "Fermé" },
+    { "days": "Mardi et Jeudi", "time": "19:00 — 22:00" },
+    { "days": "Mercredi", "time": "12:00 — 14:30 · 19:00 — 22:00" },
+    { "days": "Vendredi — Dimanche", "time": "12:00 — 14:30 · 19:00 — 22:00" }
+  ],
+  "aboutPage": {
+    "heroEyebrow": "Notre Maison",
+    "heroTitle": "Une histoire de temps et de saveurs",
+    "originsLabel": "Les Origines",
+    "originsTitle1": "Né en 2017 d'une idée",
+    "originsTitle2": "de temps et de patience",
+    "originsP1_1": "Il était une fois ",
+    "originsP1_2": "\"Il Bistrot del Tempo Perduto\"",
+    "originsP1_3": ", un délicieux coin de paradis fait de bougies, de lumières douces, de parfums et d'objets respirant l'air d'une époque révolue. ",
+    "originsP1_4": "Aujourd'hui, il est temps de changer",
+    "originsP1_5": ", pas dans l'essence, mais de lieu. Après un parcours difficile et fatigant, nous sommes enfin arrivés à destination : nous vous accueillons dans un ",
+    "originsP1_6": "nouvel espace où les meubles et les couleurs respirent la beauté",
+    "originsP1_7": " et le raffinement des détails, sans jamais laisser nos saveurs de côté.",
+    "originsP2_1": "Notre cuisine s'inspire des ",
+    "originsP2_2": "livres de recettes de la chef Sandra",
+    "originsP2_3": ". Nos plats sont faits de ",
+    "originsP2_4": "souvenirs et de traditions",
+    "originsP2_5": ", comme les pâtes fraîches et le stockfish à la ligure. Chez nous, vous pouvez retrouver l'authentique ",
+    "originsP2_6": "\"plat du dimanche\"",
+    "originsP2_7": ", celui qui rappelle les chaleureux repas de famille, pour terminer en douceur avec les ",
+    "originsP2_8": "desserts les plus classiques",
+    "originsP2_9": ", tout simplement ceux d'une maman.",
+    "originsP3_1": "Dehors, tout est ",
+    "originsP3_2": "course et frénésie",
+    "originsP3_3": ", mais pas au Bistrot. Le nom \"Tempo Perduto\" (Temps Perdu) continue d'être un ",
+    "originsP3_4": "hommage aux soirées qui semblent ne jamais finir",
+    "originsP3_5": " et aux vins qui se font attendre. Ici, c'est comme si le ",
+    "originsP3_6": "temps s'arrêtait",
+    "originsP3_7": ", transformant l'attente en émerveillement. L'esprit est toujours le même : une grande attention aux détails, le goût des souvenirs et ",
+    "originsP3_8": "aucune précipitation",
+    "originsP3_9": ". Et notre histoire continue avec de grandes nouvelles... à bientôt.",
+    "philosophyLabel": "Notre Philosophie",
+    "philosophyQuote": "«Nous ne servons pas seulement de la nourriture. Nous servons le luxe du temps qui passe, transformé en souvenir.»",
+    "inspirationLabel": "L'Inspiration",
+    "inspirationTitle1": "Entre Ligurie",
+    "inspirationTitle2": "et Provence",
+    "inspirationP1": "Notre cuisine est née de la rencontre entre deux traditions qui se ressemblent : la Ligurie des pestos et du poisson bleu, et la France des sauces mères et de la cuisson lente.",
+    "inspirationP2": "Les années passées en Ligurie nous ont appris le respect du temps : le temps d'un fond de sauce qui réduit, d'un braisé qui cuit six heures, de notre focaccia qui lève.",
+    "seasonLabel": "Cuisine de Saison",
+    "seasonTitle1": "Le menu suit",
+    "seasonTitle2": "le marché et le potager",
+    "seasonP1": "Notre menu change avec les saisons et la pêche du jour. Nous travaillons avec de petits producteurs de l'arrière-pays ligure et des pêcheurs du marché d'Imperia, en ne choisissant que le meilleur.",
+    "seasonP2": "La tradition ligure — le pesto, les pansoti, le poisson bleu — rencontre la technique française : les sauces mères, les cuissons lentes, la pâtisserie classique. Un dialogue entre deux cuisines qui se ressemblent par leur amour du temps et de l'ingrédient.",
+    "statsLabel1": "Années de cuisine",
+    "statsLabel2": "Pêche fraîche",
+    "statsValue2": "Chaque jour",
+    "statsLabel3": "Pâtes fraîches",
+    "statsValue3": "Faites main",
+    "seasonQuote": "«Le temps est l'ingrédient qui ne s'achète pas.»",
+    "hospitalityLabel": "L'Hospitalité",
+    "hospitalityQuote": "«Nous accueillons chaque invité comme on accueille un ami de longue date : avec du temps, du soin, avec l'envie de le faire se sentir chez lui.»",
+    "hospitalitySub": "Notre équipe — salle et cuisine",
+    "pillarsLabel": "Les Trois Piliers",
+    "pillarsTitle": "Cuisine, Cave, Atmosphère",
+    "kitchenTitle": "Cuisine",
+    "kitchenText": "Matière première excellente, technique classique, saisonnalité rigoureuse. Aucun compromis sur l'ingrédient.",
+    "cellarTitle": "Cave",
+    "cellarText": "Une sélection soignée de vins. Notre personnel vous conseillera l'accord parfait pour vos plats.",
+    "atmosphereTitle": "Atmosphère",
+    "atmosphereText": "Lumières tamisées, grand soin. Tables espacées, musique douce, bougies allumées chaque soir comme un rituel.",
+    "ctaTitle1": "Venez découvrir",
+    "ctaTitle2": "le temps perdu",
+    "ctaBtnBook": "Réserver une Table",
+    "ctaBtnMenu": "Voir le Menu"
+  },
+  "contactPage": {
+    "heroEyebrow": "Contact",
+    "heroTitle": "Venez nous rendre visite",
+    "heroDescription": "Nous sommes au cœur d'Imperia, à deux pas du port. Pour toute demande — réservations, événements privés, dîners d'affaires — nous sommes à votre disposition.",
+    "whereLabel": "Où Nous Sommes",
+    "restaurantName": "Il Bistrot del Tempo Perduto",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Horaires",
+    "bookBtn": "Réserver une Table",
+    "mapTitle": "Carte du restaurant",
+    "directionsBtn": "Itinéraire",
+    "openMapBtn": "Ouvrir dans la carte",
+    "socialTitle": "Suivez-nos réseaux"
+  },
+  "menuPage": {
+    "heroEyebrow": "Le Menu",
+    "heroTitle": "Le menu change avec les saisons",
+    "heroDescription": "Une cuisine qui suit le marché, la mer et le potager. Ce sont les plats de notre carte — une sélection qui se renouvelle à chaque saison.",
+    "noteLabel": "Remarque",
+    "noteText": "«Le menu peut varier selon la disponibilité du marché et de la saison. En l'absence de produit frais, un produit surgelé pourrait être utilisé. Pour les allergies et intolérances, parlez-en à notre équipe.»",
+    "bookBtn": "Réserver une Table"
+  },
+  "notFoundPage": {
+    "eyebrow": "404 — Page non trouvée",
+    "title1": "Cette page",
+    "titleItalic": "s'est perdue dans le temps",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Revenez découvrir notre cuisine et notre histoire.",
+    "homeBtn": "Retour à l'Accueil",
+    "bookBtn": "Réserver une Table"
+  },
+  "reservationsPage": {
+    "heroEyebrow": "Réservations",
+    "heroTitle": "Réservez votre table",
+    "heroDescription": "Contactez-nous directement pour réserver votre table.",
+    "howToLabel": "Comment Réserver",
+    "title": "Réserver Directement",
+    "callLabel": "Appelez-nous",
+    "whatsappLabel": "Écrivez-nous sur WhatsApp",
+    "emailLabel": "Envoyer un E-mail / PEC",
+    "hoursLabel": "Horaires d'Ouverture",
+    "contactsLabel": "Contacts Directs",
+    "quote": "«Le temps perdu est le plus beau des temps.»"
+  },
+  "winePage": {
+    "heroEyebrow": "La Cave",
+    "heroTitle": "Une histoire de plus de 50 étiquettes",
+    "heroDescription": "Une cave construite au fil de neuf années de recherche. Cépages ligures, grands italiens, classiques français et bulles pour chaque occasion. Voici quelques exemples de notre cave.",
+    "featuredBadge": "En Vedette",
+    "tastingNotesLabel": "Notes de dégustation",
+    "pairingLabel": "Accord : ",
+    "sommelierEyebrow": "Le Sommelier",
+    "sommelierQuote": "«Chaque bouteille raconte un territoire. Laissez-vous guider dans un parcours sur mesure, de l'apéritif au dessert.»",
+    "bookBtn": "Réserver une Table"
+  },
+  "menuCategories": {
+    "antipasti": {
+      "label": "Entrées",
+      "subtitle": "Les Commencements",
+      "description": "Des saveurs pour ouvrir la soirée — fruits de mer crus, légumes du potager et grands classiques."
+    },
+    "mare": {
+      "label": "De la Mer",
+      "subtitle": "La Pêche du Jour",
+      "description": "Une sélection différente chaque jour, choisie au marché du matin. Le poisson arrive entier et est travaillé à la main."
+    },
+    "pasta": {
+      "label": "Pâtes Fraîches",
+      "subtitle": "Faites à la main chaque matin",
+      "description": "Les pâtes fraîches sont le cœur de la cuisine ligure. Étirées au rouleau, farcies avec soin, cuites à la commande."
+    },
+    "secondi": {
+      "label": "Plats Principaux",
+      "subtitle": "La Terre et le Feu",
+      "description": "Viandes sélectionnées, cuissons lentes et sauces réduites à point. L’âme de notre cuisine."
+    },
+    "dolci": {
+      "label": "Desserts",
+      "subtitle": "La Clôture",
+      "description": "Desserts classiques revisités en légèreté. Le sucre ne masque jamais la saveur de l’ingrédient principal."
+    }
+  },
+  "menuItems": {
+    "ant-1": { "name": "6 Huîtres de Bretagne (N° 2 Concaves)", "desc": "Fines huîtres bretonnes servies très fraîches au naturel.", "tags": ["Cru", "Mer"] },
+    "ant-2": { "name": "Plateau Misto", "desc": "Sélection spéciale composée de 3 huîtres et 3 crevettes.", "tags": ["Cru"] },
+    "ant-3": { "name": "Crevettes à l'aïoli", "desc": "Crevettes servies avec la traditionnelle et crémeuse sauce aïoli française.", "tags": [] },
+    "ant-4": { "name": "Crevettes à la catalane", "desc": "Crevettes fraîches avec tomates cerises, oignon rouge doux et vinaigrette.", "tags": [] },
+    "ant-5": { "name": "Brandade de Morue", "desc": "Morue travaillée avec art avec de l’huile d’olive, servie avec des croûtons.", "tags": ["Tradition"] },
+    "ant-6": { "name": "Tartare de Thon", "desc": "Battue de thon cru au couteau en portion d'entrée.", "tags": [] },
+    "ant-7": { "name": "Soufflé de Carottes", "desc": "Moelleux soufflé aux carottes accompagné d'une riche fondue de gorgonzola.", "tags": ["Végétarien"] },
+    "ant-8": { "name": "Soufflé de Courgettes Trombette", "desc": "Soufflé de courgettes trombette ligures avec une sauce tomate fraîche.", "tags": ["Végétarien"] },
+    "ant-9": { "name": "Panna Cotta Salée", "desc": "Une délicieuse et subtile réinterprétation salée pour ouvrir l'appétit.", "tags": [] },
+    "ant-10": { "name": "Légumes Farcis", "desc": "Les classiques légumes de la tradition ligure, farcis maigre et cuits au four.", "tags": ["Tradition Ligure", "Végétarien"] },
+    "ant-11": { "name": "Parmigiana", "desc": "Parmigiana d'aubergines à la tomate, basilic et fromage fondant.", "tags": ["Végétarien"] },
+    "ant-12": { "name": "Panzanella de la Mer", "desc": "Salade de pain rustique enrichie de fruits de mer frais.", "tags": [] },
+    "ant-13": { "name": "Salade \"Condiglione\"", "desc": "Traditionnelle salade estivale de la Riviera ligure, fraîche et riche.", "tags": ["Végétarien"] },
+    "ant-14": { "name": "Veau Tonné", "desc": "Rôti de veau cuit à basse température avec une sauce au thon onctueuse.", "tags": [] },
+
+    "pas-1": { "name": "Tagliolini Verts au Ragoût de Poisson", "desc": "Pâtes fraîches aux épinards assaisonnées d'un riche ragoût de la pêche.", "tags": ["Pâtes Fraîches"] },
+    "pas-2": { "name": "Pansoti aux Crevettes et Tomates Cerises", "desc": "Pansoti typiques de la tradition ligure, aux crevettes, tomates cerises fraîches et touche de légumes croquants.", "tags": ["Pâtes Fraîches"] },
+    "pas-3": { "name": "Gnocchi au Poulpe et Tomates Datterini", "desc": "Gnocchi faits maison au vrai poulpe et tomates datterini jaunes et rouges.", "tags": [] },
+    "pas-4": { "name": "Gnocchi aux Moules et Figues", "desc": "Association audacieuse et réussie entre la salinité des moules et la douceur des figues.", "tags": [] },
+    "pas-5": { "name": "Pappardelle aux Anchois", "desc": "Pappardelle liées aux anchois, amandes croquantes et pignons de pin.", "tags": [] },
+    "pas-6": { "name": "Tagliatelles Vertes au Ragoût de Canard", "desc": "Pâtes aux œufs vertes au ragoût de canard coupé au couteau.", "tags": [] },
+    "pas-7": { "name": "Tagliatelles Vertes, Courgettes, Crevettes et Boutargue", "desc": "Un triomphe de saveurs avec courgettes fraîches, crevettes et saupoudrage de boutargue.", "tags": [] },
+    "pas-8": { "name": "Raviolis Verts au Ragoût de Bœuf", "desc": "Raviolis verts farcis de viande, servis avec un ragoût de bœuf mijoté.", "tags": ["Pâtes Farcies"] },
+    "pas-9": { "name": "Raviolis Verts Beurre et Sauge", "desc": "Raviolis délicats rehaussés par la simplicité du beurre fondu et de la sauge.", "tags": ["Pâtes Farcies", "Végétarien"] },
+    "pas-10": { "name": "Lasagnes de la Maison", "desc": "Faites au four avec courgettes trombette ligures et pesto génois.", "tags": [] },
+    "pas-11": { "name": "Risotto aux Courgettes Trombette et Tomate Cœur de Bœuf", "desc": "Risotto crémeux aux courgettes, tomate cœur de bœuf, oignon et basilic.", "tags": ["Végétarien"] },
+    "pas-12": { "name": "Fregola de la Mer", "desc": "Fregola sarde cuite comme un risotto avec scampi, moules, calamars, palourdes et merlu.", "tags": [] },
+    "pas-13": { "name": "Paëlla à la Valencienne", "desc": "Le plat espagnol classique riche en saveurs, avec viande, poisson et safran.", "tags": [] },
+
+    "mar-1": { "name": "Tartare de Thon (Plat Principal)", "desc": "Abondante tartare de thon frais au couteau, assaisonnée d'huile d'olive extra vierge et agrumes.", "tags": ["Cru"] },
+    "mar-2": { "name": "Seiches en Zemin", "desc": "Soupe ligure historique et savoureuse à base de seiches, blettes et pignons de pin.", "tags": ["Tradition Ligure"] },
+    "mar-3": { "name": "Petite Soupe de Poisson", "desc": "Soupe riche et parfumée avec la pêche du jour, servie avec des croûtons chauds.", "tags": [] },
+    "mar-4": { "name": "Friture d'Anchois et Petites Crevettes", "desc": "Friture mixte de la mer croustillante, sèche et dorée.", "tags": [] },
+    "mar-5": { "name": "Brandacujun", "desc": "Spécialité de l'Ouest ligure : stockfish monté avec pommes de terre, ail, olives et persil.", "tags": ["Tradition Ligure"] },
+    "mar-6": { "name": "Daurade à la Ligure", "desc": "Filet de daurade cuit au four avec pommes de terre, olives Taggiasche et pignons de pin.", "tags": [] },
+    "mar-7": { "name": "Sauté de Moules", "desc": "Moules sautées à la poêle avec ail, persil, vin blanc et tomate.", "tags": [] },
+
+    "sec-1": { "name": "Canard à l'Orange", "desc": "Grand classique français : magret de canard servi avec une sauce aigre-douce à l'orange.", "tags": ["Classique Français"] },
+    "sec-2": { "name": "Filet au Poivre Vert", "desc": "Tendre filet de bœuf servi avec la crème classique au poivre vert en grains.", "tags": [] },
+    "sec-3": { "name": "Escargots de Bourgogne", "desc": "Escargots de Bourgogne gratinés en coquille avec beurre, ail et persil.", "tags": ["Classique Français"] },
+    "sec-4": { "name": "Tajine de Poulet aux Épices", "desc": "Poulet mijoté lentement aux arômes orientaux, servi dans le plat traditionnel.", "tags": [] },
+    "sec-5": { "name": "Tartare de Fassona et Brochette de Courgettes", "desc": "Viande crue de très haute qualité, coupée à la main, accompagnée de légumes.", "tags": [] },
+    "sec-6": { "name": "Escargots à la Ligure", "desc": "Escargots mijotés selon la tradition avec herbes aromatiques et tomate.", "tags": ["Tradition Ligure"] },
+
+    "dol-1": { "name": "Tiramisù de la Maison", "desc": "Notre tiramisù artisanal classique, préparé avec des biscuits imbibés d'espresso et une crème mascarpone onctueuse.", "tags": ["Fait maison"] },
+    "dol-2": { "name": "Gâteau de Sandra", "desc": "Un délicieux hommage à notre cuisinière historique : un gâteau de crème cuite moelleux au goût authentique d'autrefois.", "tags": ["Fait maison"] },
+    "dol-3": { "name": "Panna Cotta à la Vanille", "desc": "Panna cotta aux gousses de vanille de Madagascar, coulis de fruits des bois frais.", "tags": ["Classique"] },
+    "dol-4": { "name": "Tarte Tatin", "desc": "Tarte tatin aux pommes reinettes, caramel sombre, glace à la vanille maison.", "tags": ["Classique français"] },
+    "dol-5": { "name": "Sorbet du Jour", "desc": "Sorbet aux fruits de saison. Demandez au serveur la proposition du jour.", "tags": ["De saison", "Végétalien"] }
+  },
+"tripadvisorSection": {
+    "eyebrow": "Tripadvisor",
+    "title": "Les mots de nos hôtes",
+    "reviews": [
+      {
+        "quote": "«Dîner entre amis dans un cadre raffiné et élégant. L'accueil est chaleureux, le service impeccable et aux bons moments. Le menu est très attrayant et varié : il fait un clin d'œil à la cuisine française tout en mettant en valeur les produits du terroir. Nous avons savouré des plats soignés et délicieux avec un excellent rapport qualité-prix. Je recommande vivement ce magnifique endroit.»"
+      },
+      {
+        "quote": "«Endroit extrêmement charmant avec un service aimable et efficace. Menu varié avec une cave à la hauteur. Poisson ultra frais et plats séduisants servis avec habileté. Section des desserts complète avec une présentation irréprochable. Bravo, nous reviendrons bientôt !»"
+      },
+      {
+        "quote": "«Cadre très élégant, parfait aussi bien pour un dîner en couple qu'entre amis. Personnel vraiment aimable et compétent. Plats magnifiques à l'œil et excellents au goût. Ce fut un plaisir d'y dîner et j'y retournerai sans hésiter.»"
+      }
+    ]
+  }
+}

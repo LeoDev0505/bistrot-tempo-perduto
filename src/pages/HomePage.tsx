@@ -4,6 +4,7 @@ import { SignatureDishes } from '@/components/home/SignatureDishes';
 import { Atmosphere } from '@/components/home/Atmosphere';
 import { WinePreview } from '@/components/home/WinePreview';
 import { CtaReservation } from '@/components/home/CtaReservation';
+import { TripAdvisorReviews } from '@/components/ui/TripAdvisorReviews';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <SignatureDishes />
       <Atmosphere />
       <WinePreview />
+      <TripAdvisorReviews />
       <CtaReservation />
     </>
   );

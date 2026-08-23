@@ -3,8 +3,11 @@ import { Reveal } from '@/components/ui/Reveal';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { IMAGE } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 
 export function AboutPreview() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative py-24 md:py-40 bg-espresso-950 grain-overlay">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16">
@@ -24,30 +27,27 @@ export function AboutPreview() {
 
           {/* Text column — concise teaser */}
           <div className="lg:col-span-6 lg:order-1">
-            <SectionLabel label="La Casa" />
+            <SectionLabel label={t('aboutPreview.label')} />
 
             <Reveal delay={0.1}>
               <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-[1.1] text-balance">
-                Un luogo dove il tempo
+                {t('aboutPreview.title')}
                 <span className="block italic text-amber-light/90">
-                  si ferma a tavola
+                  {t('aboutPreview.titleItalic')}
                 </span>
               </h2>
             </Reveal>
 
             <Reveal delay={0.2}>
               <p className="mt-8 text-cream/60 leading-relaxed text-lg max-w-xl">
-                Da oltre nove anni, nel cuore di Imperia, custodiamo un’idea
-                semplice: che una cena non sia solo un pasto, ma un’esperienza
-                da ricordare. Ispirata ai bistrot francesi e radicata nella
-                tradizione ligure.
+                {t('aboutPreview.description')}
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <div className="mt-10">
                 <ButtonLink to="/about" variant="ghost" withArrow className="text-amber-gold">
-                  Scopri la nostra storia
+                  {t('aboutPreview.button')}
                 </ButtonLink>
               </div>
             </Reveal>

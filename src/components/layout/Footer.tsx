@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { NAV_LINKS, RESTAURANT } from '@/lib/constants';
 import { OpeningHours } from '@/components/ui/OpeningHours';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-espresso-950 border-t border-cream/5 grain-overlay">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 lg:px-16 py-20 md:py-28">
@@ -15,14 +18,14 @@ export function Footer() {
               del Tempo Perduto
             </p>
             <p className="mt-6 text-sm leading-relaxed text-cream/50 max-w-xs">
-              {RESTAURANT.description}
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-6">
-              Esplora
+              {t('footer.explore')}
             </h4>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -31,7 +34,8 @@ export function Footer() {
                     to={link.to}
                     className="link-underline text-sm text-cream/70 hover:text-cream transition-colors"
                   >
-                    {link.label}
+                    {/* Riutilizziamo le traduzioni della Navbar! */}
+                    {t(`navbar.links.${link.to.replace('/', '') || 'home'}`, link.label)}
                   </Link>
                 </li>
               ))}
@@ -40,7 +44,7 @@ export function Footer() {
                   to="/reservations"
                   className="link-underline text-sm text-cream/70 hover:text-cream transition-colors"
                 >
-                  Prenotazioni
+                  {t('footer.reservations')}
                 </Link>
               </li>
             </ul>
@@ -49,15 +53,16 @@ export function Footer() {
           {/* Hours */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-6">
-              Orari
+              {t('footer.hours')}
             </h4>
+            {/* Se OpeningHours ha testi da tradurre, dovremo farlo nel suo componente! */}
             <OpeningHours />
           </div>
 
           {/* Contact */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.3em] text-amber-gold/90 mb-6">
-              Contatti
+              {t('footer.contacts')}
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
@@ -109,11 +114,11 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-cream/5 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <p className="text-xs text-cream/40 tracking-wide">
-            © {new Date().getFullYear()} {RESTAURANT.name}. Tutti i diritti riservati.
+            © {new Date().getFullYear()} {RESTAURANT.name}. {t('footer.rights')}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <span className="text-xs text-cream/40">
-              Imperia · Liguria · Italia
+              {t('footer.location')}
             </span>
           </div>
         </div>
